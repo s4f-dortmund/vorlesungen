@@ -6,7 +6,7 @@ all: $(NAME).pdf
 # latexmk does its own dependency management, so we always run it
 # by stating an impossible prerequesite FORCE
 $(NAME).pdf: FORCE | build
-	TEXINPUTS=build:.: latexmk $(TEXOPTIONS) $(NAME).tex
+	TEXINPUTS=../style: latexmk $(TEXOPTIONS) $(NAME).tex
 
 
 build:
