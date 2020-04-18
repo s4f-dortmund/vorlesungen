@@ -11,14 +11,27 @@
 
 \begin{frame}
   \frametitle{Strahlungsprozesse der Erde}
-  % 
+  %TODO
 \end{frame}
+
+\begin{frame}
+	\frametitle{Aufbau der Atmosphäre}
+	\begin{figure}
+		\centering
+		\includegraphics{bilder/atmosphaere-stockwerkaufbau_bildungsserver_hh.jpg}
+		\caption{Schematischer Aufbau der Atmosphäre, Quelle: Bildungsserver Hamburg} % Zu beachten ist dabei, dass die atmosphärischen Schiten nicht überall gleich groß sind zB geht die Troposphäre im allg bis etwa 10-12km Höhe, in den Tropen aber bis etwa 17-18km Höhe und an den Polen in nur 8 km Höhe	
+	\end{figure}
+\end{frame}
+
+%Übergang: Ohne die Atmosphäre hätten wir auf der Erde eine durchschnittliche Temperatur von -18 Grad, durch die Atmosphäre und die atmosphärischen Gase ist es aber im Mittel etwa etwa 35 Grad wärmer -> 15 Grad
 
 \begin{frame}
   \frametitle{Strahlungshaushalt}
   
   \begin{figure}
-  	\caption{Strahlungshaushalt der Erde}
+  	\centering
+  	\includegraphics[width=0.8\linewidth]{bilder/Energiebilanz_der_Erde_NASA.png}
+  	\caption{Strahlungshaushalt der Erde, Quelle: NASA nach Kiehl und Trenberth 1997, Übersetzung: S4F} % Die Abbildung ist in den Folien der S4F Vertiefung zum Klimawandel (S.21) aber dort leider nur spärlich referenziert. Annahme: Jemand der S4F hat dieses Bild Übersetzt und dem Abbildungs-Pool hinzugefügt.
   \end{figure}
   
   %Abbildung für Strahlungshaushalt einfügen z.B: vom Bildungsserver Hamburg https://bildungsserver.hamburg.de/atmosphaere-und-treibhauseffekt/2069644/atmosphaere-strahlungshaushalt-artikel/ 
@@ -26,8 +39,18 @@
   % oder vom IPCC AR5 Figure 2.11
 \end{frame}
 
+% Fokus auf den Treibhauseffekt, d.h. vorherige Abbildung reduziert um ein paar Energieflüsse  (mitte)
+% zB Sonneneinstrahlung- Atmosphärische Reflexion = 235 W/m2
+% Die Abbildung zeigt zum einen die Temperatur auf der Erde ohne die Strahlungsbilanz der Erde(links) außerdem nochmal den atmosphärischen Aufbau (rechts)
+% In der Mitte ist die Auswirkung der Treibhausgase zu sehen
+
 \begin{frame}
   \frametitle{Treibhauseffekt}
+  \begin{figure}
+  	\centering
+  	\includegraphics[width=0.8\linewidth]{bilder/Treibhauseffekt_welt_der_physik.png}
+  	\caption{Natürlicher Treibhauseffekt, Quelle: Welt der Physik}
+  \end{figure}
 \end{frame}
 
 \begin{frame}
@@ -50,7 +73,8 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Treibhausgase}
+	\frametitle{Treibhausgase} % TODO: Folie evtl. rausnehmen, da zu unübersichtlich
+	
 	% TODO: Ist das zu unübersichtlich? Der Fokus soll auf der Verweildauer und dem EInfluss auf den Treibhauseffekt liegen --> evtl Informationen entfernen
 	
 	
@@ -60,7 +84,7 @@
 	
 	% ppm steht für parts per million
 	\begin{tabular}{p{2.5cm}|p{3cm}|p{3cm}|p{2cm}|p{2cm}}
-		Treibhausgas & Konzentration in der Atmosphäre (2018) & mittlerer jährlicher absoluter Anstieg (2008-2018) & mittlere Verweil-dauer in der Atmosphäre [Jahre] & Strahlungs-antrieb (Radiative Forcing) [\SI{}{\watt\per\square\metre}] \\ 
+		Treibhausgas & Konzentration in der Atmosphäre (2018) & mittlerer jährlicher absoluter Anstieg (2008-2018) & mittlere Verweil-dauer in der Atmosphäre [Jahre] & Strahlungs-antrieb (Radiative Forcing) \\%[\SI{}{\watt\per\square\metre}] \\ 
 		\hline 
 		Kohlenstoff-dioxid ($CO_2$) & (407,8 $\pm$ 0,1) $ppm$ & 2,26 $ppm$\,$y^{-1}$ &  30-1000 & 2,044 \\ 
 		\hline 
@@ -72,20 +96,49 @@
 	
 \end{frame}
 
+
 \begin{frame}
 	\frametitle{Treibhausgase}
 	\begin{figure}
-		\caption{Anstieg der Treibhausgaskonzentration}
+		\centering
+		\includegraphics[width=0.6\linewidth]{bilder/Treibhausgase0-aktuell_bildungsserver_hh.jpg}
+		\caption{Treibhausgaskonzentration in der Atmosphäre, Quelle: Bildungsserver Hamburg}
 		%Abbildung wie in S.Ranmstorf S.33 -> http://www.pik-potsdam.de/~stefan/Publications/Book_chapters/Der_Klimawandel_Kapitel2.pdf oder direkt im IPCC 2013: https://www.ipcc.ch/report/ar5/wg1/observations-atmosphere-and-surface/ Fig 2.1-2.3
 	\end{figure}
 \end{frame}
+
+
+
+\begin{frame}
+	\frametitle{Treibhausgase - Klimawirksamkeit}
+	\begin{figure}
+		\begin{figure}
+			\begin{columns}
+				\column{0.6\linewidth}
+				\includegraphics[width=0.9\linewidth]{bilder/radiative forcing_CCnow_mooc.jpg}
+				\column{0.3\linewidth}
+				\caption{Strahlungsantrieb der Treibhausgase zwischen 1750 und 2011, Quelle: Climate.now MOOC, abgewandelt von IPCC 2014 Kapitel 8}
+			\end{columns}
+		\end{figure}
+	\end{figure}
+\begin{itemize}
+	\item Die Änderungen des Strahlungsantriebs sind durch den Menschen verursacht (ersichtlich durch den betrachten Zeitraum)
+	\item $CO_2$, $CH_4$ und $N_2O$ zählen zu den langlebigen Treibhausgasen und sind über den Globus verteilt.
+	\item Der Grad des wissenschaftlichen Verständnis über diese ist hoch!  
+	% O3 ist kontinental bis global verbereitet und das Verständnis ist Mittel
+	% CH4 ist global verbreitet jedoch ist das Versändnis über den Strahlungsantrieb gering.
+	% Das Verständnis sinkt nach Einträgen und daher besonders für die verringernden RF-Faktoren wie Albedo ungewiss. Die Verringerung könnte auch deutlich niedriger liegen, was bedeutet, dass der von den Menschen verursachte Strahlungsantireb sogar noch stärker ist. - Da durch die Erderwärmung und Rußablagerungen auf dem Eis der Albedo-Effekt geschmälert wird, ist das sogar wahrscheinlich.
+	% Ergänzungen aus der Abbildung: https://wiki.bildungsserver.de/klimawandel/index.php/Strahlungsantrieb
+\end{itemize}
+\end{frame}
+
 
 \begin{frame}
 	\frametitle{$CO_2$-Äquivalent}
 	
 	\begin{block}{Strahlungsantrieb / Radiative Forcing / RF}
 		Strahlungsenergie pro Sekunde und pro Quadratmeter, die durch die Tropopause hindurch kommt \\
-		Einheit: \SI{}{\joule\per\second\per\square\metre} bzw. \SI{}{\watt\per\square\meter}
+		Einheit: %\SI{}{\joule\per\second\per\square\metre} bzw. %\SI{}{\watt\per\square\meter}
 	\end{block}
 	
 	\begin{block}{$CO_2$-Äquivalent}
@@ -105,12 +158,39 @@
 \end{frame}
 
 \begin{frame}
+	\frametitle{Klimawirksamkeit der Treibhausgase}
+	\begin{itemize}
+		\item Methan ($CH_4$) ist ca. 30-mal klimawirksamer als $CO_2$ 
+		\item Lachgas ($N_2O$) ist 265-mal klimawirksamer als $CO_2$
+		% das heißt selbst die deutlich kleinere Menge von ihnen in der Atmosphäre (ppb anstatt ppm) hat einen deutlichen Einfluss
+	\end{itemize}
+%(Quelle: IPCC 2014, Kapitel 8, Tabelle 8.7) %Treibhauswirksamkeit über 100 Jahre ohne Einbezug der Feedbacks - GWP [..] with and without inclusion of climate–carbon feedbacks (cc fb) in response to emissions of the indicated non-CO2 gases
+
+%TODO Abbildung evtl vereinfachen oder bessere Abbildung finden! Einfluss von SO_2 noch nicht betrachtet und generell zu voiele Infos über andere Gase enthalten
+% SO_2 könnte Debatte eröffnen, die wir an der Stelle noch nicht führen können
+% z.B. Abbildung über Verweildauer in der Atmosphäre IPCC 2014 Kapitel 8 Anhang 8.A
+	\begin{columns}
+	\column{0.5\linewidth}
+		\begin{figure}
+			\centering
+			\includegraphics[width=\linewidth]{bilder/IPCC_GWP_anthropogenic_emissions.jpg}
+			\caption{Globale von Menschen verursachte Emissionen sortiert nach Klimawirksamkeit (GWP), Quelle: IPCC 2014, Kapitel 8}
+		\end{figure}
+		\column{0.5\linewidth}
+		$\rightarrow$ $CO_2$, $CH_4$ und $N_2O$ haben über die Zeit die höchste Klimawirksamkeit\\
+		$\rightarrow$ $CO_2$ verliert über den Zeitraum von 100 Jahren kaum an Klimawirksamkeit\\
+%		auch Methan bleibt vergleichsweise lange klimawirksam\\
+	\end{columns}
+\end{frame}
+
+\begin{frame}
 	\frametitle{Eis-Albedo-Rückkopplung}%Rahmstorf, Schellnhuber - Der Klimawandel S. 14
 	 Reflexion der ankommenden Sonneneinstrahlung durch Eismassen
 	 
 	 \begin{columns}[T] % align columns
 	 	\begin{column}{.48\textwidth}
 	 		\centering
+	 		\textbf{Abkühlung}\\
 	 		\color{blue}\rule{\linewidth}{4pt}
 	 		\color{black} 
 	 		\color<2->{gray}
@@ -128,6 +208,7 @@
 	 	\hfill%
 	 	\begin{column}{.48\textwidth}<2->
 	 		\centering
+	 		\textbf{Aufwärmung}\\
 	 		\color{red}\rule{\linewidth}{4pt}
 	 		\color{black}
 	 		je weniger Eismassen\\
