@@ -2,6 +2,8 @@
 
 ## Dual Screen Output
 
+Way better than to configure xrandr: [pympress](https://github.com/Cimbali/pympress)
+
 Get a list of your output devices
 ```
 $ xrandr --listmonitors
