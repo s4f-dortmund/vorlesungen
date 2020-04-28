@@ -1,6 +1,10 @@
 # Vorlesungen
 
+Die Vorlesungen unterliegen der [CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) Lizenz
+
 ## Dual Screen Output
+
+Way better than to configure xrandr: [pympress](https://github.com/Cimbali/pympress)
 
 Get a list of your output devices
 ```
