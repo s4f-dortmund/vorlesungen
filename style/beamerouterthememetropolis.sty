@@ -8,11 +8,11 @@
 %% ---------------------------------------------------------------------------
 %% Copyright 2015 Matthias Vogelgesang and the LaTeX community. A full list of
 %% contributors can be found at
-%% 
+%%
 %%     https://github.com/matze/mtheme/graphs/contributors
-%% 
+%%
 %% and the original template was based on the HSRM theme by Benjamin Weiss.
-%% 
+%%
 %% This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
 %% International License (https://creativecommons.org/licenses/by-sa/4.0/).
 %% ---------------------------------------------------------------------------
@@ -95,6 +95,9 @@
       leftskip=\metropolis@frametitle@padding,%
       rightskip=\metropolis@frametitle@padding,%
     ]{frametitle}%
+  \hspace{-3.75mm}
+  \raisebox{-1.0mm}{\includegraphics[trim={0cm 0cm 0cm 4.3cm}, clip, width=\paperwidth]{warming-stripes.png}}% -3mm 3.3cm
+  \vbox{}\vskip-1mm% 9mm
   \metropolis@frametitlestrut@start%
   \insertframetitle%
   \nolinebreak%
