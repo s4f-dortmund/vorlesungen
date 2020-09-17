@@ -1,7 +1,7 @@
-\section{Faktoren des Klimasystems}
 % Abbildung, die nach und nach wächst, mit den erklärten Teilbereichen
 
 % vgl IPCC AR5 climate feedbacks, AR4 chapter 1 basics: carbon cycle
+\subsection{Die Faktoren des Klimasystems}
 
 \begin{frame}
   \frametitle{Faktoren des Klimasystems}
@@ -9,8 +9,10 @@
 	\column{0.7\linewidth}
 	\begin{figure}
 	 	\centering
-	 	\includegraphics[width=\linewidth]{bilder/WMO_Cycles_factors_general.png}
-	 	\caption{Schematische Abbildung des Klimasystems, Quelle: IPCC 2007, Kapitel 1 und WMO-Video: The Carbon Cycle} % Anmerkungen hinzugefügt nach
+    % trim={<left> <lower> <right> <upper>}
+	 	\includegraphics[trim={1cm 0cm 0cm 3cm}, clip, width=0.8\linewidth]{%
+        bilder/climate_components/global_climate_components_spheres_ex_human.pdf}
+	 	\caption{Schematische Abbildung des Klimasystems, Quelle: IPCC 2013, Physical Science Base, Kapitel 6} % Anmerkungen hinzugefügt nach
 	\end{figure}
   \column{0.3\linewidth}
   \textbf{Sphären des Klimasystems}\\
@@ -26,19 +28,32 @@
 
 	\note{
 	\begin{itemize}
-    \item[] Sphärennamen aus dem altgriechischen
-		\item[] Hier: Fokus auf Hydrosphäre, Kryosphäre und Biosphäre, insbesondere Vegetation.
-		\item[] Die Effekte in diesen Komponenten sind bereits heute spürbar: Dürreperioden und Überflutungen, Rückgang der Eisschilde und Waldrodung.
-		\item[] Die Zustände der Böden sind aber entscheidend für die Vegetation und Landwirtschaft.
+    \item[] Sphären
+    \begin{itemize}
+      \item[] Atmosphäre: Gasförmige Hülle der Erde\\
+      \item[] Hydrosphäre: Ozeane, sowie Wasserkreislauf auf den Kontinenten
+              und in der Atmosphäre\\
+      \item[] Kryosphäre: Schnee und Eis\\
+      \item[] Biosphäre: Lebewesen, Tiere und Pflanzen\\
+      \item[] Pedosphäre: Boden\\
+      \item[] Lithosphäre: Gestein
+    \end{itemize}
+		\item[] Hier: Vorstellung aller Sphären, sowie einiger wichtiger Interaktionen zwischen ihnen.
+		\item[] Die Effekte des Klimawandels sind bereits heute spürbar: Dürreperioden und Überflutungen, Rückgang der Eisschilde und Waldrodung.
+		\item[] Die Zustände der Böden sind entscheidend für die Vegetation und Landwirtschaft.
 		\item[] $\rightarrow$ Erosion von Böden durch Übernutzung und Dürren macht sie unfruchtbar (Nährstoffverlust und Austrocknung).
 		\item[] $\rightarrow$ Gestein liefert Mineralien, was ebenfalls für die Vegetation und auch z.B. Schalenbildung bei Muscheln wichtig ist.
 	\end{itemize}
 	}
 \end{frame}
 
+\input{content/atmosphaere.tex}
 \input{content/hydrosphaere.tex}
 \input{content/kryosphaere.tex}
-\input{content/interaktion_hydro_kryo_atmo.tex}
 \input{content/biosphaere.tex}
+\input{content/pedosphaere.tex}
+\input{content/lithosphaere.tex}
+\subsection{Interaktionen der Faktoren des Klimasystems}
+\input{content/eis-albedo.tex}
+\input{content/interaktion_hydro_kryo_atmo.tex}
 \input{content/interaktion_bio_atmo.tex}
-\input{content/klimasystem_zusammenfassung.tex}

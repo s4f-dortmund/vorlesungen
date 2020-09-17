@@ -1,19 +1,4 @@
-\section{Strahlungsprozesse der Erde}
-\note{
-  \begin{itemize}
-    \item[] Zentrale Frage: Was bestimmt das Klima?
-    \item[] Wie ist ein Erdklima möglich?
-    \item[] Grundlage bildet die Sonne. Aber was ist der Unterschied zu unseren Nachbarn?
-    \item[] Mittlere Oberflächentemperaturen: Venus \SI{464}{°C}, Mars \SI{-55}{°C}
-    \item[$\rightarrow$] Die Erde hat eine Atmosphäre
-    \item[] Die Atmosphäre sorgt dafür, dass eine gewisse Menge der Sonnenenergie auf der Erde verbleibt
-    \item[] lebenfreundliche Temperaturen werden auf der Erde erreicht
-  \end{itemize}
-}
-%\begin{frame}
-%  \frametitle{Strahlungsprozesse der Erde}
-%  %TODO
-%\end{frame}
+\subsection{Die Strahlungsprozesse der Erde}
 
 \begin{frame}
 	\frametitle{Aufbau der Atmosphäre}
@@ -22,7 +7,16 @@
     \begin{columns}
       \column{0.1\linewidth}
       \column{0.5\linewidth}
-		    \includegraphics[width=.9\linewidth]{bilder/atmosphaere-stockwerkaufbau_bildungsserver_hh.jpg}
+      \begin{tikzpicture}
+		    \node[anchor=south west,inner sep=0] (image) at (0,0) {
+        \includegraphics[width=.85\linewidth]{bilder/atmosphaere-stockwerkaufbau_bildungsserver_hh.jpg}};
+        \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \onslide<2>\draw[red,ultra thick,rounded corners] (0.05,0.15) rectangle (0.95,0.285);
+        \onslide<3>\draw[red,ultra thick,rounded corners] (0.05,0.285) rectangle (0.95,0.715);
+        \onslide<4>\draw[red,ultra thick,rounded corners] (0.05,0.715) rectangle (0.95,0.855);
+        \onslide<5>\draw[red,ultra thick,rounded corners] (0.05,0.855) rectangle (0.95,0.96);
+    \end{scope}
+      \end{tikzpicture}
       \column{0.3\linewidth}
         \caption{Schematischer Aufbau der Atmosphäre, Quelle: Bildungsserver Hamburg}
       \column{0.1\linewidth}
