@@ -47,17 +47,36 @@
 % "es war doch immer schon im Sommer warm"
 
 
-\begin{frame}
+\begin{frame}[t]
 	\frametitle{Warming Stripes}
 	% Abbildung der Warming Stripes: Die Entwicklung ist wirklich dramatisch
 
 	% Farbskala erklären
 	\begin{figure}
 		\centering
-		\includegraphics[width=\linewidth]{bilder/s4f-warming-stripes}
+		\vspace{-1em}
+		\begin{tikzpicture}
+			\node[anchor=south west,inner sep=0] (image) at (0,0) {
+			\includegraphics[width=\linewidth]{bilder/s4f-warming-stripes}};
+			\begin{scope}[x={(image.south east)},y={(image.north west)}]
+				\only<1>{\draw[thick,->] (0.0, -0.1) -- (1.0, -0.1) node[anchor=north west] {Zeit};}
+				% +/- 0.0058 shifts by one year
+				\only<2>\fill[gray, opacity=0.7] (0.00,0.003) rectangle (0.3875+0.0058,0.99);
+				\only<2>\fill[gray, opacity=0.7] (0.3933+0.0058,0.003) rectangle (1.00,0.99);
+				\only<3>\fill[gray, opacity=0.7] (0.00,0.003) rectangle (0.3875-25*0.0058+0.0025,0.99);
+				\only<3>\fill[gray, opacity=0.7] (0.3933+5*0.0058+0.0005,0.003) rectangle (1.00,0.99);
+				\only<4>\fill[gray, opacity=0.7] (0.00,0.003) rectangle (0.3875+5*0.0058+0.0065,0.99);
+				\only<4>\fill[gray, opacity=0.7] (0.3933+36*0.0058-0.0003,0.003) rectangle (1.00,0.99);
+				\only<5>\fill[gray, opacity=0.7] (0.00,0.003) rectangle (0.3875+37*0.0058-0.0003,0.99);
+				\only<5>\fill[gray, opacity=0.7] (0.3933+67*0.0058-0.002,0.003) rectangle (1.00,0.99);
+				\only<6>\fill[gray, opacity=0.7] (0.00,0.003) rectangle (0.3875+68*0.0058-0.002,0.99);
+				\only<6>\fill[gray, opacity=0.7] (0.3933+98*0.0058-0.0035,0.003) rectangle (1.00,0.99);
+			\end{scope}
+	\end{tikzpicture}
 		\caption{Die \textit{Warming Stripes}}
 		\label{fig:s4f-warming-stripes}
 	\end{figure}
+	\only<1>{
 	\begin{itemize}
 		\item Jeder Balken repräsentiert eine Jahr aus der Periode 1850-2017
 		\item Blau = kälter als der Mittelwert, Rot=Wärmer
@@ -68,6 +87,47 @@
 	\begin{center}
 		\url{https://s4f-dortmund.github.io/}
 	\end{center}
+	}
+	\only<3|handout:0>{
+		\begin{figure}
+			\centering
+			\vspace{-1em}
+			\includegraphics[trim={0cm 1.5cm 0cm 3cm}, clip, width=.425\textwidth]{bilder/Global_Historical_Climate_Network_Daily/station-counts-1891-1920-temp.png}
+			\vspace{-1em}
+			\caption{Wetterstationen in der Periode 1891 - 1920 die zehn Jahre lang
+							 Wetterdaten übertragen haben, Quelle: Global Historical Climate Network}
+		\end{figure}
+	}
+	\only<4|handout:0>{
+		\begin{figure}
+			\centering
+			\vspace{-1em}
+			\includegraphics[trim={0cm 1.5cm 0cm 3cm}, clip, width=.425\textwidth]{bilder/Global_Historical_Climate_Network_Daily/station-counts-1921-1950-temp.png}
+			\vspace{-1em}
+			\caption{Wetterstationen in der Periode 1921 - 1950 die zehn Jahre lang
+							 Wetterdaten übertragen haben, Quelle: Global Historical Climate Network}
+		\end{figure}
+	}
+	\only<5|handout:0>{
+		\begin{figure}
+			\centering
+			\vspace{-1em}
+			\includegraphics[trim={0cm 1.5cm 0cm 3cm}, clip, width=.425\textwidth]{bilder/Global_Historical_Climate_Network_Daily/station-counts-1951-1980-temp.png}
+			\vspace{-1em}
+			\caption{Wetterstationen in der Periode 1951 - 1980 die zehn Jahre lang
+							 Wetterdaten übertragen haben, Quelle: Global Historical Climate Network}
+		\end{figure}
+	}
+	\only<6>{
+		\begin{figure}
+			\centering
+			\vspace{-1em}
+			\includegraphics[trim={0cm 1.5cm 0cm 3cm}, clip, width=.425\textwidth]{bilder/Global_Historical_Climate_Network_Daily/station-counts-1981-2010-temp.png}
+			\vspace{-1em}
+			\caption{Wetterstationen in der Periode 1981 - 2010 die zehn Jahre lang
+							 Wetterdaten übertragen haben, Quelle: Global Historical Climate Network}
+		\end{figure}
+	}
 
 	\note{
 	\begin{itemize}
@@ -76,6 +136,12 @@
 		\item[] Jeder Balken Jahresmittelwert globaler Luft- und Wassertemperaturen
 		\item[] Wer Interesse an den Daten hat, kann sich das auf unserer Homepage noch einmal genau anschauen
 		\item[] Daten auch für verschiedene Orte auf der Welt verfügbar
+	\end{itemize}
+	\vspace{1em}
+	\begin{itemize}
+		\item[1916] Letzte große Antarktis-Expedition unter der Leitung von Ernest Shackleton (Endurance-Expedition). Ziel: Den Kontinent durchqueren. Die Expedition scheiterte, ist aber besonders bekannt, da alle Expeditionsmitglieder unter äußerst widrigen Umständen überlebten.
+		\item[] Albert Einstein veröffentlicht die allgemeine Relativitätstheorie.
+		\item[] immer mehr Wetterstationen -> genauere Messungen möglich. Darauf kommen wir später noch einmal zurück.
 	\end{itemize}
 	}
 \end{frame}
