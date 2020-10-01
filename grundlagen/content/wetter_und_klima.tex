@@ -43,6 +43,14 @@
 		\item Betrachtet werden u.a. Mittelwert, Abweichung und Wahrscheinlichkeit des Auftretens extremer Ereignisse z.B. Dürren %M.Latif, Klimawandel und Klimadynamik S. 11
 		\item Aus dem Griechischen: \textit{klinein} $\equiv$ neigen $\rightarrow$ Neigung der Erdachse
 	\end{itemize}
+	\vspace{1em}
+	Beispiel
+	\begin{itemize}
+		\item[] Gut bekannt sind die Jahreszeiten
+		\item[] Eine Jahreszeit ist das mittlere Wetter zu der Jahreszeit
+		\item[] Ganz einfach gesprochen: wärmer im Sommer und kälter im Winter
+		\item[Frage] Woher kommen die Jahreszeiten?
+	\end{itemize}
 	}
 
 \end{frame}
@@ -62,9 +70,12 @@
 
 	\note{
 	\begin{itemize}
-		\item[] Erde rotiert um die Sonne und um die eigene Achse
-		\item[]	Neigung der Erdachse momentan etwa \SI{23,5}{°}
-		\item[$\rightarrow$] Jahreszeiten
+		\item[] Erde rotiert um die Sonne in einem variablen Abstand von 147 mio. bis 152 mio. Kilometern
+		\item[] Ebenso dreht sich die Erde und um die eigene Achse
+		\item[]	Neigung der Erdachse zur Ebene der Erdbahn um die Sonne momentan etwa \SI{23,5}{°}
+		\item[$\rightarrow$] Jahreszeiten, denn der Winkel der Sonneneinstrahlung ist entscheidend für den lokalen Energieeintrag
+		\item[] Ist nur für kurze Zeiträume richtig
+		\item[$\rightarrow$] Milankovic-Zyklen in den 1930er Jahren entdeckt
 	\end{itemize}
 	}
 \end{frame}
@@ -73,7 +84,15 @@
 \frametitle{Klima - Eiszeitzyklen}
 \begin{figure}
 	\centering
-	\includegraphics[width=.55\linewidth]{bilder/milankovitch_IPCC2007_AR4.png}
+	\begin{tikzpicture}
+		\node[anchor=south west,inner sep=0] (image) at (0,0) {
+		\includegraphics[width=.55\linewidth]{bilder/milankovitch_IPCC2007_AR4.png}};
+		\begin{scope}[x={(image.south east)},y={(image.north west)}]
+			\onslide<2>\draw[red,ultra thick] (0.495,0.25) circle (1.75em);
+			\onslide<3>\draw[red,ultra thick] (0.79,0.92) circle (1.75em);
+			\onslide<4>\draw[red,ultra thick] (0.9,0.85) circle (1.75em);
+		\end{scope}
+	\end{tikzpicture}
 	\caption{Milankovitch-Zyklen: Periodische Änderungen der Erdbahnparameter, Quelle: IPCC 2007, WG1, Kapitel 6}
 \end{figure}
 \begin{itemize}
@@ -123,18 +142,28 @@
 	\uncover<2->{
 	\begin{figure}
 		\centering
-		\includegraphics[width=0.6\linewidth]{bilder/Temp_Deutschland_1743-2013_Berkley_Wiki.png}
+		\begin{tikzpicture}
+			\node (image1) {\includegraphics[width=0.6\linewidth]{%
+				bilder/Temp_Deutschland_1743-2013_Berkley_Wiki.png}};
+			\onslide<3>\node (image2) at (image1.west) [xshift=-0.9cm]{%
+				\includegraphics[trim={0cm 1.5cm 0cm 3cm}, clip, width=0.25\linewidth]{%
+					bilder/Global_Historical_Climate_Network_Daily/station-counts-1861-1890-temp.png}};
+			\onslide<3>\node (image3) at (image1.east) [xshift=1.4cm]{%
+				\includegraphics[trim={0cm 1.5cm 0cm 3cm}, clip, width=0.25\linewidth]{%
+					bilder/Global_Historical_Climate_Network_Daily/station-counts-1981-2010-temp.png}};
+	  \end{tikzpicture}
 		\caption{Entwicklung der mittleren Jahrestemperaturen in Deutschland, Quelle: Wikipedia, Daten: Berkeley Earth Surface Temperature Project}
 	\end{figure}
 	}
 
 	%TODO Bild mit 30 Jahre moving average erstellen
 	\note{
-	Definition Klimaänderung
+	Definition: Eine Klimaänderung ist eine erkennbare (messbare) Änderung Klimas über einen gewissen Zeitraum (z.B. 30 Jahre), pürbar durch Änderung atmosphärischer Größen wie der Temperatur
 	\begin{itemize}
 	 	\item[] mittlere Temperaturen in Deutschland pro Jahr von 1743 bis 2013
 	 	\item[] 10 Jahre moving average, Fluktuation, aber Temperaturanstieg
 	 	\item[] 30 Jahre moving average, weniger Schwankungen, kleiner, aber  deutlicher Temperaturanstieg
+		\item[] in hellrot: Unsicherheit auf den gleitenden Durchschnitt nimmt ab (Erinnerung an Dichte der Wetterstationen)
 	 \end{itemize}
 	 \vspace{1em}
 	 \begin{itemize}
