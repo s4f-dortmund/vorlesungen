@@ -59,24 +59,24 @@
 			\node[anchor=south west,inner sep=0] (image) at (0,0) {
 			\includegraphics[width=\linewidth]{bilder/s4f-warming-stripes}};
 			\begin{scope}[x={(image.south east)},y={(image.north west)}]
-				\only<1>{\draw[thick,->] (0.0, -0.1) -- (1.0, -0.1) node[anchor=north west] {Zeit};}
+				\only<1|handout:1>{\draw[thick,->] (0.0, -0.1) -- (1.0, -0.1) node[anchor=north west] {Zeit};}
 				% +/- 0.0058 shifts by one year
-				\only<2>\fill[gray, opacity=0.7] (0.00,0.003) rectangle (0.3875+0.0058,0.99);
-				\only<2>\fill[gray, opacity=0.7] (0.3933+0.0058,0.003) rectangle (1.00,0.99);
-				\only<3>\fill[gray, opacity=0.7] (0.00,0.003) rectangle (0.3875-25*0.0058+0.0025,0.99);
-				\only<3>\fill[gray, opacity=0.7] (0.3933+5*0.0058+0.0005,0.003) rectangle (1.00,0.99);
-				\only<4>\fill[gray, opacity=0.7] (0.00,0.003) rectangle (0.3875+5*0.0058+0.0065,0.99);
-				\only<4>\fill[gray, opacity=0.7] (0.3933+36*0.0058-0.0003,0.003) rectangle (1.00,0.99);
-				\only<5>\fill[gray, opacity=0.7] (0.00,0.003) rectangle (0.3875+37*0.0058-0.0003,0.99);
-				\only<5>\fill[gray, opacity=0.7] (0.3933+67*0.0058-0.002,0.003) rectangle (1.00,0.99);
-				\only<6>\fill[gray, opacity=0.7] (0.00,0.003) rectangle (0.3875+68*0.0058-0.002,0.99);
-				\only<6>\fill[gray, opacity=0.7] (0.3933+98*0.0058-0.0035,0.003) rectangle (1.00,0.99);
+				\only<2|handout:0>\fill[gray, opacity=0.7] (0.00,0.003) rectangle (0.3875+0.0058,0.99);
+				\only<2|handout:0>\fill[gray, opacity=0.7] (0.3933+0.0058,0.003) rectangle (1.00,0.99);
+				\only<3|handout:0>\fill[gray, opacity=0.7] (0.00,0.003) rectangle (0.3875-25*0.0058+0.0025,0.99);
+				\only<3|handout:0>\fill[gray, opacity=0.7] (0.3933+5*0.0058+0.0005,0.003) rectangle (1.00,0.99);
+				\only<4|handout:0>\fill[gray, opacity=0.7] (0.00,0.003) rectangle (0.3875+5*0.0058+0.0065,0.99);
+				\only<4|handout:0>\fill[gray, opacity=0.7] (0.3933+36*0.0058-0.0003,0.003) rectangle (1.00,0.99);
+				\only<5|handout:0>\fill[gray, opacity=0.7] (0.00,0.003) rectangle (0.3875+37*0.0058-0.0003,0.99);
+				\only<5|handout:0>\fill[gray, opacity=0.7] (0.3933+67*0.0058-0.002,0.003) rectangle (1.00,0.99);
+				\only<6|handout:2>\fill[gray, opacity=0.7] (0.00,0.003) rectangle (0.3875+68*0.0058-0.002,0.99);
+				\only<6|handout:2>\fill[gray, opacity=0.7] (0.3933+98*0.0058-0.0035,0.003) rectangle (1.00,0.99);
 			\end{scope}
 	\end{tikzpicture}
 		\caption{Die \textit{Warming Stripes}}
 		\label{fig:s4f-warming-stripes}
 	\end{figure}
-	\only<1>{
+	\only<1|handout:1>{
 	\begin{itemize}
 		\item Jeder Balken repräsentiert eine Jahr aus der Periode 1850-2017
 		\item Blau = kälter als der Mittelwert, Rot=Wärmer
@@ -118,7 +118,7 @@
 							 Wetterdaten übertragen haben, Quelle: Global Historical Climate Network}
 		\end{figure}
 	}
-	\only<6>{
+	\only<6|handout:2>{
 		\begin{figure}
 			\centering
 			\vspace{-1em}
