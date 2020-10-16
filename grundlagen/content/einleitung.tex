@@ -15,6 +15,7 @@
 				etwa \SI{7,50}{km\squared} (etwa die Fläche von Dorstfeld) verbrannt.
 				\item[2019] Buschfeuer in Australien, \SI{186000}{km\squared} (\SI{20}{\%} der bewaldeten Fläche Australiens, bzw. \nicefrac{1}{2} mal die Fläche von Deutschland) verbrannt, etwa 1 Mrd. Tiere getötet, Rauch auch in Argentinien und Chile spührbar, wird Black Summer genannt.
 				\item[2020] zu warmer und trockener Sommer in Deutschland \SI{1,9}{\celsius} über dem Mittel der Referenzperiode 1961 bis 1990, Waldbrände und Hurrikans in den USA, etc.
+				\item[$\rightarrow$] Beobachtung extremer Wetterereignisse
 			\end{itemize}
 		}
 	\end{frame}
@@ -31,7 +32,13 @@
 	\frametitle{Aktuelle Nachrichten}
 	\begin{figure}
 		\centering
-		\includegraphics[width=0.7\linewidth]{bilder/dortmund}
+		\begin{tikzpicture}
+			\node[anchor=south west,inner sep=0] (image) at (0,0) {
+				\includegraphics[width=0.7\linewidth]{bilder/dortmund}};
+			\begin{scope}[x={(image.south east)},y={(image.north west)}]
+				\draw[red,ultra thick,rounded corners] (0.12,0.0475) rectangle (0.23,0.1);
+			\end{scope}
+		\end{tikzpicture}
 	\end{figure}
 	\begin{center}
 		\textbf{Auch bei uns}
@@ -39,8 +46,11 @@
 	\note{
 	\begin{itemize}
 		\item Man muss gar nicht so weit gehen, in Dortmund ist es genau so (2019)
-		\item Diese extremen Ereignisse lassen sich nicht ausschließlich auf den Klimawandel zurück führen. Mit Hilfe von statistischen Modellen ist es aber heute möglich anzugeben, dass sie durch den Klimawandel mit einer viel höheren Wahrscheinlichkeit auftreten.
+		\item Extrem Ereignisse lassen sich nicht ausschließlich auf den Klimawandel zurück führen
+		\item Statistische Modelle ermöglichen es aber heute zu zeigen, dass Extremereignisse durch den Klimawandel mit einer viel höheren Wahrscheinlichkeit auftreten.
 	\end{itemize}
+	\vspace{1em}
+	Wie sieht das nun global tatsächlich aus?
 	}
 \end{frame}
 
@@ -71,6 +81,7 @@
 				\only<5|handout:0>\fill[gray, opacity=0.7] (0.3933+67*0.0058-0.002,0.003) rectangle (1.00,0.99);
 				\only<6|handout:2>\fill[gray, opacity=0.7] (0.00,0.003) rectangle (0.3875+68*0.0058-0.002,0.99);
 				\only<6|handout:2>\fill[gray, opacity=0.7] (0.3933+98*0.0058-0.0035,0.003) rectangle (1.00,0.99);
+				\only<7|handout:0>{\draw[thick,->] (0.0, -0.1) -- (1.0, -0.1) node[anchor=north west] {Zeit};}
 			\end{scope}
 	\end{tikzpicture}
 		\caption{Die \textit{Warming Stripes}}
@@ -128,6 +139,18 @@
 							 Wetterdaten übertragen haben, Quelle: Global Historical Climate Network}
 		\end{figure}
 	}
+	\only<7|handout:0>{
+	\begin{itemize}
+		\item Jeder Balken repräsentiert eine Jahr aus der Periode 1850-2017
+		\item Blau = kälter als der Mittelwert, Rot=Wärmer
+		\item Je dunkeler die Farbe, desto extremer die Abweichung vom Mittelwert
+		\item Die Trend geht klar zu höheren Temperaturen
+		\item Das Logo der Scientists 4 Future
+	\end{itemize}
+	\begin{center}
+		\url{https://s4f-dortmund.github.io/}
+	\end{center}
+	}
 
 	\note<1>{
 	\begin{itemize}
@@ -135,6 +158,7 @@
 		\item[] Jeder Balken Jahresmittelwert globaler Luft- und Wassertemperaturen
 		\item[] Bei Interesse: Daten auf unserer Homepage verlinkt (auch für verschiedene Orte verfügbar)
 	\end{itemize}
+	Wie sieht die Zusammensetzung der Daten aus?
 	}
 	\note<2>{
 	\begin{itemize}
@@ -143,8 +167,8 @@
 		\item[] immer mehr Wetterstationen -> genauere Messungen möglich.
 	\end{itemize}
 	}
-	\note<3->{
-	Immer ein 30 Jahrezeitraum hervorgehoben
+	\note<3-6>{
+	Immer ein 30 Jahrezeitraum hervorgehoben (später: Definition Klima)
 	\begin{itemize}
 		\item[vor 1891] Kaum Wetterstationen, 1-5 Stationen pro Quadrant an US-Küsten, Zentraleuropa und austalischer Ostküste
 		\item[ab 1891]	Stationen die zehn Jahre lang täglich Wetterdaten übertrugen, Hier:  Temperatur (auch: Niederschlag)
@@ -156,6 +180,18 @@
 		\item[] Australien, Europa und Teile Russlands mit 5-10 Stationen
 		\item[ab 1981] Abdeckung verbessert, doch große Flächen Brasiliens, Grönlands und der Demokratischen Republik Kongo nicht abgedeck, immer noch Lücken
 	\end{itemize}
+	}
+	\note<7>{
+	Wir haben verstanden:
+	\begin{itemize}
+		\item[] Wie sich die globale Lufttemperatur im Laufe der Jahre verändert hat
+		\item[] Wie die Lufttemperatur global gemessen wird
+		\item[] Was jeder Balken in den Warming Stripes bedeutet
+	\end{itemize}
+	\vspace{1em}
+	Gibt es Fragen?
+	\vspace{1em}
+	Wie wird die Zukunft aussehen?
 	}
 \end{frame}
 
