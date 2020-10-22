@@ -12,10 +12,17 @@
 			\item[] Wasser kann in drei Phasen/Aggregatszuständen vorliegen: Gasförmig (Dampf), flüssig und fest (Eis)
 			\item[] Besonderheit: Kommen alle drei in nennenswerter Menge in unserer Umwelt vor
 			\item[] Phase hängt von Temperatur und Druck ab $\rightarrow$ Achsen des Phasendiagramms (Druck als log-Skala)
+<<<<<<< HEAD
+			\item[] Übergang von einer Pahsen zur anderen abrubt
+			\item[] Punkte von besonderer Bedeutung:
+			\begin{itemize}
+				\item[] Schmelz- und Siedepunkt bei 1\, atm (Normaldruck) definierendie Celsius Temperaturskala
+=======
 			\item[] Übergang von einer Phasen zur anderen abrubt
 			\item[] Punkte von besonderer Bedeutung:
 			\begin{itemize}
 				\item[] Schmelz- und Siedepunkt bei 1\, atm (Normaldruck) definieren die Celsius Temperaturskala
+>>>>>>> 45613b99da46e73f9270014507a5eef8bab3c646
 				\item[] Trippelpunkt: Punkt an dem Wasser in allen drei Phasen vorliegen kann (im thermodynamischen Gleichgewicht)
 				\item[] Kritischer Punkt: Ab diesem Punkt gehen gasförmige und flüssige Phase in einander über
 			\end{itemize}

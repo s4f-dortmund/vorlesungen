@@ -39,17 +39,28 @@
 			% Im besonderen Fall des Salzwassers liegt die größte Dichte jedoch bei -3.8 Grad
 			\item<3->Größte Dichte von \textit{Salz}wasser bei \SI{-3,8}{°C}
 			\begin{itemize}
+<<<<<<< HEAD
+				\item<3-> [] Bei der Eisbildung wird verbleibt das Salz gelößt im Wasser
+=======
 				\item<3-> [] Bei der Eisbildung verbleibt das Salz gelöst im Wasser
+>>>>>>> 45613b99da46e73f9270014507a5eef8bab3c646
 				\item<3-> [$\rightarrow$] Salzwasser kann kälter werden als Eis und sinkt in die tieferen Schichten des Ozeans
 				\item<3-> [$\rightarrow$] Wärmeres, weniger dichtes Wasser steigt auf
 				\item<3-> [] \textbf{\textcolor{blue}{Konvektion}} in den Polarregionen
 				\item<3-> [$\rightarrow$] Kohlenstoffsenken
 			\end{itemize}
+<<<<<<< HEAD
+		\end{itemize}
+		\column[t]{0.5\linewidth}
+		\begin{figure}
+			\includegraphics[scale=0.7]{bilder/wasser_molekuel}\\		\caption{Schematische Darstellung eines Wasser Moleküls, Quelle [chemga]}
+=======
 >>>>>>> Text zu Phasendiagramm von Wasser und neues Bild
 		\end{itemize}
 		\column[t]{0.5\linewidth}
 		\begin{figure}
 			\includegraphics[scale=0.7]{bilder/wasser_molekuel}\\		\caption{Schematische Darstellung eines Wasser Moleküls, Quelle: chemga}
+>>>>>>> 45613b99da46e73f9270014507a5eef8bab3c646
 		\end{figure}
 	\end{columns}
 	\note{
