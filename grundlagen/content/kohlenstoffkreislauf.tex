@@ -50,121 +50,142 @@
 		\column{0.6\linewidth}
 		\begin{figure}
 			\centering
-			\includegraphics[width=0.9\linewidth]{bilder/IPCC_Cycles_carbon.jpg}
-			\caption{Vereinfachte Abbildung zum jährlichen Kohlenstoffkreislauf, Quelle: IPCC 2013, Kapitel 6}
+			\only<1|handout:0>{
+				\includegraphics[trim={1cm 0cm 0cm 3cm}, clip, width=0.9\linewidth]{bilder/kohlenstoff/carbon_cycle_industrial-ocean.pdf}
+				\caption{Vereinfachte Abbildung zum jährlichen Kohlenstoffkreislauf, Quelle: IPCC 2013, Kapitel 6}
+			}
+			\only<2|handout:0>{
+				\includegraphics[trim={1cm 0cm 0cm 3cm}, clip, width=0.9\linewidth]{bilder/kohlenstoff/carbon_cycle_reservoirs.pdf}
+				\caption{Kohlenstoffspeicher des Erdsystems.}
+			}
+			\only<3|handout:0>{
+				\includegraphics[trim={1cm 0cm 0cm 3cm}, clip, width=0.9\linewidth]{bilder/kohlenstoff/carbon_cycle_ocean-atmosphere.pdf}
+				\caption{Wechselwirkungen zwischen Ozeanen und Atmosphäre.}
+			}
+			\only<4|handout:0>{
+				\includegraphics[trim={1cm 0cm 0cm 3cm}, clip, width=0.9\linewidth]{bilder/kohlenstoff/carbon_cycle_pre-industrial.pdf}
+				\caption{Wechselwirkungen zwischen Landmassen und Atmosphäre.}
+			}
+			\only<5|handout:0>{
+				\includegraphics[trim={1cm 0cm 0cm 3cm}, clip, width=0.9\linewidth]{bilder/kohlenstoff/carbon_cycle_industrial.pdf}
+				\caption{Anthropogener Einfluss im Kreislauf zwischen Landmassen und Atmosphäre.}
+			}
+			\only<6|handout:1>{
+				\includegraphics[trim={1cm 0cm 0cm 3cm}, clip, width=0.9\linewidth]{bilder/kohlenstoff/carbon_cycle_industrial-ocean.pdf}
+				\caption{Anthropogener Einfluss im gesamten Kohlenstoffkreislauf.}
+			}
 		\end{figure}
 		\column{0.4\linewidth}
-		$\Rightarrow$ vermutete natürliche CO$_2$-Flüsse vor der Industrialisierung (vor 1750)\\
-		\color{red}$\Rightarrow${ }\color{black} durch Menschen verursachte mittlere jährliche CO$_2$-Flüsse (2000 - 2009) \\
-		\color{red}\textbf{rote Reservoire}\color{black}: kumulative Änderung zwischen 1750 und 2011
-		\begin{center}
-			$\downarrow$
-		\end{center}
-		\textbf{der Kohlenstoffgehalt der Atmosphäre steigt um ca. 4 Gt pro Jahr}
+		\only<1|handout:0>{
+		\begin{itemize}
+			\item[\textbf{\rightarrow}] vermutete natürliche CO$_2$-Flüsse vor der Industrialisierung (vor 1750)
+			\item[{\color{red}\textbf{\rightarrow}}] durch Menschen verursachte mittlere jährliche CO$_2$-Flüsse (2000 - 2009)
+			\item[] \color{red}\textbf{rote Reservoire}\color{black}: kumulative Änderung zwischen 1750 und 2011
+		\end{itemize}
+		}
+		\only<2|handout:0>{
+			\begin{itemize}
+				\item[] \textbf{Schwarze Zahlen} beschreiben gesamte geschätze Vorkommen in den jeweiligen Reservoiren.
+			\end{itemize}
+		}
+		\only<3|handout:0>{
+			\begin{itemize}
+				\item[] \textbf{Schwarze \rightarrow} sind geschätzte natürliche CO$_2$-Flüsse vor der Industrialisierung (vor 1750)
+			\end{itemize}
+		}
+		\only<4|handout:0>{
+			\begin{itemize}
+				\item[] \textbf{Schwarze \rightarrow} sind geschätzte natürliche CO$_2$-Flüsse vor der Industrialisierung (vor 1750)
+			\end{itemize}
+		}
+		\only<5|handout:0>{
+			\begin{itemize}
+				\item[] \color{red}\textbf{Rote \rightarrow} \color{black} sind durch Menschen verursachte mittlere jährliche CO$_2$-Flüsse von zwischen 2000 und 2009.
+				\item[] \color{red}\textbf{Rote Reservoire} \color{black} sind die kumulative Änderung zwischen 1750 und 2011.
+			\end{itemize}
+		}
+		\only<6|handout:1>{
+		\begin{itemize}
+			\item[\textbf{\rightarrow}] vermutete natürliche CO$_2$-Flüsse vor der Industrialisierung (vor 1750)
+			\item[{\color{red}\textbf{\rightarrow}}] durch Menschen verursachte mittlere jährliche CO$_2$-Flüsse (2000 - 2009)
+			\item[] \color{red}\textbf{rote Reservoire}\color{black}: kumulative Änderung zwischen 1750 und 2011
+		\end{itemize}
+			\begin{center}
+				$\downarrow$
+			\end{center}
+			\textbf{der Kohlenstoffgehalt der Atmosphäre steigt um ca. 4 Gt pro Jahr}
+		}
 	\end{columns}
 
 
-	\note{
+	\note<1>{
 		\begin{itemize}
-			\item[] Die Abbildung ist aus dem neusten IPCC report 2013
+			\item[] Die Abbildung ist aus dem IPCC report 2013
 			\item[] Sie zeigt die Kohlenstoff-Flüsse schematisch
 			\item[] schwarze Pfeile sind die geschätzten jährlichen Emissionen vor der Industrialisierung - also vor 1750
 			\item[] rote Pfeile sind die mittleren jährlichen Emissionen zwischen 2000 und 2009
-			\item[] Die Kohlenstoff-Speicher in der Erde und der Atmosphäre sind aber die geschätzten \textbf{gesamten Vorkommen}
+			\item[] Die Kohlenstoffspeicher im Erdsystem sind die geschätzten \textbf{gesamten Vorkommen}
 			\item[] die gesamten Änderungen seit der Industrialisierung sind hierbei wieder \textbf{rot}
-			\item[] v.a. aus fossilen Brennstoffen 7,8 Pg C (1 Pg = \num{e15} g)
+		\end{itemize}
+		}
+	\note<2>{
+		\begin{itemize}
+			\item[] Natürliche CO$_2$-Reservoire:
+			\begin{itemize}
+				\item[] Ozeane \SI{40450}{PgC}
+				\item[] Böden \SIrange{1500}{2400}{PgC}
+				\item[] Permafrost \SI{1700}{PgC}
+				\item[] Fossile Lagerstätten \SIrange{1002}{1940}{PgC}
+				\item[] Vegetation \SIrange{450}{650}{PgC}
+				\item[] Atmosphäre \SI{589}{PgC}
+			\end{itemize}
+		\end{itemize}
+		}
+	\note<3>{
+		Kohlenstofffluss zwischen Ozeanen und Atmosphäre
+		\begin{itemize}
+			\item[] Aufnahme von \SI{0.9}{PgC} durch Flüsse
+			\item[] Abgabe von \SI{0.7}{PgC} an Atmosphäre
+			\item[] Abgabe von \SI{0.2}{PgC} an Ozenanböden
+		\end{itemize}
+		}
+	\note<4>{
+		Kohlenstofffluss zwischen Landmassen und Atmosphäre
+		\begin{itemize}
+			\item[] Abgabe von \SI{10}{PgC} an Atmosphäre durch Frischwasser
+			\item[] Aufnahme von \SI{1.7}{PgC} durch Photosynthese
+			\item[] Aufnahme von \SI{0.3}{PgC} durch Verwitterung
+			\item[] Abgabe von \SI{0.1}{PgC} durch Vulkanismus
+		\end{itemize}
+		}
+	\note<5>{
+		Kohlenstofffluss zwischen Landmassen und Atmosphäre mit menschlichem Einfluss
+		\begin{itemize}
+			\item[] Abgabe von \SI{10}{PgC} an Atmosphäre durch Frischwasser
+			\item[] Aufnahme von \SI{1.7}{PgC} durch Photosynthese
+			\item[] Aufnahme von \SI{0.3}{PgC} durch Verwitterung
+			\item[] Abgabe von \SI{0.1}{PgC} durch Vulkanismus
+		\end{itemize}
+		\vspace{1em}
+		\begin{itemize}
+			\item[] Der Mensch emmittiert durch Landnutzungsänderungen \SI{11}{PgC}
+			\item[] Der Mensch emmittiert aus fossilen Brennstoffen \SI{7,8}{PgC}
+			\item[] etwa \SI{30}{\%} des CO$_2$ stammen inzwischen aus menschlichem Einfluss
 			\item[] wird im Ozean gespeichert $\rightarrow$ Konvektion
-
-			\item[] \textbf{Fazit: der CO$_2$ Gehalt der Atmosphäre hat sich seit der Industrialisierung beinahe verdoppelt}
+		\end{itemize}
+		}
+	\note<6>{
+		Kohlenstofffluss zwischen Ozeanen und Atmosphäre mit menschlichem Einfluss
+		\begin{itemize}
+			\item[] Aufnahme von \SI{2.3}{PgC} durch die Ozeane
+		\end{itemize}
+		\vspace{1em}
+		\begin{itemize}
+			\item[\textbf{Fazit:}] \textbf{der CO$_2$ Gehalt der Atmosphäre hat sich seit der Industrialisierung beinahe verdoppelt}
 			\item[] es ist anzunehmen, dass die Werte heute nochmal höher sind als die angegebenen von 2000-2009
+			\item[] $\SI{4}{PgC} = \SI{4}{GtC}$, etwa die Masse der globalen Nahrungsmittelproduktion, oder das doppelte der gesamten Biomasse der Fische, oder das zehnfache der Masse aller Menschen.
 		\end{itemize}
-	}
-\end{frame}
-\begin{frame}
-	\frametitle{Kohlenstoffkreislauf}
-	\begin{columns}
-		\column{0.6\linewidth}
-		\begin{figure}
-			\centering
-			\includegraphics[width=0.9\linewidth]{bilder/kohlenstoff/cycle_reservoirs.png}
-			\caption{Kohlenstoff-Speicher in Erde und Atmosphäre.}
-		\end{figure}
-		\column{0.4\linewidth}
-		\begin{itemize}
-			\item [] \textbf{Schwarze Zahlen} beschreiben gesamte geschätze Vorkommen in den jeweiligen Reservoiren.
-		\end{itemize}
-
-	\end{columns}
-
-\end{frame}
-
-
-
-\begin{frame}
-	\frametitle{Kohlenstoffkreislauf}
-	\begin{columns}
-		\column{0.6\linewidth}
-		\begin{figure}
-			\centering
-			\includegraphics[width=0.9\linewidth]{bilder/kohlenstoff/cycle_arrows-ocean-and-atmosphere.png}
-			\caption{Wechselwirkungen zwischen Ozeanen und Atmosphäre.}
-		\end{figure}
-		\column{0.4\linewidth}
-		\begin{itemize}
-			\item [] \textbf{Schwarze \rightarrow} sind geschätzte natürliche CO$_2$-Flüsse vor der Industrialisierung (vor 1750)
-		\end{itemize}
-	\end{columns}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Kohlenstoffkreislauf}
-	\begin{columns}
-		\column{0.6\linewidth}
-		\begin{figure}
-			\centering
-			\includegraphics[width=0.9\linewidth]{bilder/kohlenstoff/cycle_arrows-land-and-atmosphere.png}
-			\caption{Wechselwirkungen zwischen Landmassen und Atmosphäre.}
-		\end{figure}
-		\column{0.4\linewidth}
-		\begin{itemize}
-			\item [] \textbf{Schwarze \rightarrow} sind geschätzte natürliche CO$_2$-Flüsse vor der Industrialisierung (vor 1750)
-		\end{itemize}
-	\end{columns}
-\end{frame}
-
-
-\begin{frame}
-	\frametitle{Kohlenstoffkreislauf}
-	\begin{columns}
-		\column{0.6\linewidth}
-		\begin{figure}
-			\centering
-			\includegraphics[width=0.9\linewidth]{bilder/kohlenstoff/cycle_antropogenic-ocean-and-atmosphere.png}
-			\caption{Anthropogener Einfluss im Kreislauf zwischen Ozeanen und Atmosphäre.}
-		\end{figure}
-		\column{0.4\linewidth}
-		\begin{itemize}
-			\item \color{red}\textbf{Rote \rightarrow} \color{black} sind durch Menschen verursachte mittlere jährliche CO$_2$-Flüsse von zwischen 2000 und 2009.
-			\item \color{red}\textbf{Rote Reservoire} \color{black} sind die kumulative Änderung zwischen 1750 und 2011.
-		\end{itemize}
-	\end{columns}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Kohlenstoffkreislauf}
-	\begin{columns}
-		\column{0.6\linewidth}
-		\begin{figure}
-			\centering
-			\includegraphics[width=0.9\linewidth]{bilder/kohlenstoff/cycle_antropogenic-ocean-and-atmosphere.png}
-			\caption{Anthropogener Einfluss im Kreislauf zwischen Landmassen und Atmosphäre.}
-		\end{figure}
-		\column{0.4\linewidth}
-		\begin{itemize}
-			\item \color{red}\textbf{Rote \rightarrow} \color{black} sind durch Menschen verursachte mittlere jährliche CO$_2$-Flüsse von zwischen 2000 und 2009.
-			\item \color{red}\textbf{Rote Reservoire} \color{black} sind die kumulative Änderung zwischen 1750 und 2011.
-		\end{itemize}
-	\end{columns}
+		}
 \end{frame}
 
 \begin{frame}
