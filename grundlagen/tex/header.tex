@@ -35,3 +35,8 @@
 
 \usepackage{hyperref}
 \usepackage{bookmark}
+
+\newcommand{\cbox}[1]{%
+\definecolor{colorboxcolor}{HTML}{#1}
+\fcolorbox{black}{colorboxcolor}{\rule{0pt}{3pt}\rule{3pt}{0pt}}
+}
