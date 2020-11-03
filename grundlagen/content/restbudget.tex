@@ -1,93 +1,126 @@
 \begin{frame}
   \frametitle{Restbudget}
+
   \begin{columns}
     \column{0.7\linewidth}
       \begin{figure}
         \centering
-		    \only<1|handout:0>{\includegraphics[trim={0cm 0.5cm 0cm 0cm}, clip, width=\linewidth]{bilder/cumulative_co2/cumulative_co2-1.pdf}}
-        \only<2|handout:0>{\includegraphics[trim={0cm 0.5cm 0cm 0cm}, clip, width=\linewidth]{bilder/cumulative_co2/cumulative_co2-2.pdf}}
-        \only<3|handout:0>{\includegraphics[trim={0cm 0.5cm 0cm 0cm}, clip, width=\linewidth]{bilder/cumulative_co2/cumulative_co2-3.pdf}}
-        \only<4|handout:1>{\includegraphics[trim={0cm 0.5cm 0cm 0cm}, clip, width=\linewidth]{bilder/cumulative_co2/cumulative_co2-4.pdf}}
+		    \only<1|handout:0>{\includegraphics[trim={0cm 0.cm 0cm 0cm}, clip, width=\linewidth]{bilder/cumulative_co2/cumulative_co2-1.pdf}}
+        \only<2|handout:0>{\includegraphics[trim={0cm 0.0cm 0cm 0cm}, clip, width=\linewidth]{bilder/cumulative_co2/cumulative_co2-2.pdf}}
+        \only<3|handout:0>{\includegraphics[trim={0cm 0.0cm 0cm 0cm}, clip, width=\linewidth]{bilder/cumulative_co2/cumulative_co2-3.pdf}}
+        \only<4-5|handout:1>{\includegraphics[trim={0cm 0.0cm 0cm 0cm}, clip, width=\linewidth]{bilder/cumulative_co2/cumulative_co2-4.pdf}}
+        \vspace{-0.5cm}
 		    \caption{Globale Oberflächentemperatur gegen kumulative CO$_2$-Emissionen. Quelle: IPCC 2018, Kapitel 2}
       \end{figure}
     \column{0.3\linewidth}
+    \only<1>{
       \begin{itemize}
-        \item Temperaturerhöhung gegen kumulierte Emissionen
-        \item \enquote{business-as-usual} (RCP8.5 Szenario des IPCC)
-        \item Auf Basis von Szenarien, die die globale Erderwärmung in 2100 auf 1,5°C beschränken
+        \item[] Temperaturerhöhung gegen kummulierte CO$_2$-Emissionen
       \end{itemize}
+    }
+    \only<2>{
+      \begin{itemize}
+        \item[] \enquote{business-as-usual}
+        \item[$\rightarrow$] RCP8.5 Szenario des IPCC
+      \end{itemize}
+    }
+    \only<3>{
+      \begin{itemize}
+        \item[2010] \SI{0.97}{\degreeCelsius} Erwärmung und
+                    \SI{1930}{\GtCO} Emittiert
+        \item[2017] \SI{1.10}{C} Erwärmung und
+                    \SI{2220}{\GtCO} Emittiert
+      \end{itemize}
+    }
+    \only<4->{
+      \begin{itemize}
+        \item[\num{420}] \GtCO Restbudget $\rightarrow$ \SI{1.5}{\degreeCelsius} mit \SI{66}{\%}iger Wahrscheinlichkeit
+        \item[\num{580}] \GtCO Restbudget $\rightarrow$ \SI{1.5}{\degreeCelsius} mit \SI{50}{\%}iger Wahrscheinlichkeit
+        \item[\num{840}] \GtCO Restbudget $\rightarrow$ \SI{1.5}{\degreeCelsius} mit \SI{33}{\%}iger Wahrscheinlichkeit
+        \item<5> Globale Emissionen in 2019 49 GtCO$_2$ % https://edgar.jrc.ec.europa.eu/overview.php?v=booklet2019
+        \item<5>[$\Rightarrow$] Bei gleichbleibender Rate sind die Restbudgets in 8,5 bzw. 11,8 Jahren aufgebraucht
+      \end{itemize}
+    }
     \end{columns}
-    \note{
+
+    \note<1-4>{
     \vspace{-2em}
-      Abbildung aus dem Special Report 15 des IPCC von 2018
+      Abbildung aus dem Special Report 15 des IPCC von 2018, schrittweise erklärt
       \begin{itemize}
         \item Veränderungen der globalen Oberflächentemperatur gegen kumluative CO$_2$-Emissionen
-        \item Lila Punkte und Flächen zeigen die Ergebnisse der im SR15 verwendeten Modelle und Daten (TCRE)
-        \item Schwarze und rote Punkte bzw. Linien zeigen die historischen Beobachtungen (schwarz) und Vorhersagen des RCP8.5 Szenarios (rot) aus den im AR5 Bericht des IPCC betrachteten Klimamodellen (20 ESMs/EMICs)
-        \item Orangene Fläche zeigt die Bandbreite der Ergebnisse der im AR5 Bericht betrachteten Klimamodelle
-        \item Gefüllte lila Raute zeigt den Wert des Ende 2010 mit einer Erwärmung von $0.97\,$°C und $1930\,$GtCO$_2$
-        \item Leere lila Raute zeigt den Wert des Ende 2017 mit einer Erwärmung von $1.1\,$°C und $2220\,$GtCO$_2$
-        \item Dünne blaue Linie zeigt jährliche gemessene Werte
-        \item Dünne schwarze Linie zeigt Ergebnisse der CMIP5 Modelle
-        \item Gestrichelte Linien zu den Achsen zeigen die Menge kumulativer CO$_2$-Emissionen für eine Erwärmung von $1.5\,$°C, aus denen sich Restbudgets für verbleibende Emissionen ableiten lassen
+        \item Dünne blaue Linie zeigt jährliche gemessene Werte.
+        \item gestrichelte blaue Linie zeigt die mittlere globale Oberflächentemperatur.
+        \item Schwarze Punkte und Linie zeigen mittels RCP8.5 reproduzierte historische Werte (20 ESMs/EMICs).
+        \item Dünne schwarze Linie zeigt Rekonstruktion mittels der CMIP5 Modelle.
       \end{itemize}
+      }
+      \note<2-4>{
+      \begin{itemize}
+        \item Rote Punkte und Linie: Vorhersagen des RCP8.5 Szenarios, Klimamodelle aus AR5 Bericht (20 ESMs/EMICs)
+        \item Orangene Fläche zeigt die Bandbreite der Ergebnisse der im AR5 Bericht betrachteten Klimamodelle
+      \end{itemize}
+      }
+      \note<3-4>{
+      \begin{itemize}
+        \item Lila Punkte und Flächen zeigen die Ergebnisse der im SR15 verwendeten Modelle und Daten (TCRE)
+        \item Gefüllte lila Raute zeigt den Wert Ende 2010 mit einer Erwärmung von \SI{0.97}{\degreeCelsius} und \SI{1930}{\GtCO}
+        \item Leere lila Raute zeigt den Wert Ende 2017 mit einer Erwärmung von \SI{1.10}{\degreeCelsius} und \SI{2220}{\GtCO}
+      \end{itemize}
+      }
+      \note<4>{
+      \begin{itemize}
+        \item Gestrichelte Linien zu den Achsen zeigen die Menge kumulativer CO$_2$-Emissionen für eine Erwärmung von \SI{1.5}{\degreeCelsius}, aus denen sich Restbudgets für verbleibende Emissionen ableiten lassen
+      \end{itemize}
+      }
+      \note<1-4>{
+      \vfill
+      \vspace{-0.5em}
       \begin{itemize}
         \item[AR5] Fifth Assessment Report des IPCC aus 2014, \enquote{Synthesis Report: Climate Change 2014}.
         \item[ESM] Earth System Models. Klimamodelle zur Beschreibung und Vorhersage des Erdklimas.
         \item[EMIC] Earth System Models of Intermediate Complexity. Modellerweiterungen für einzelne spezifische Fragestellungen wie die Entwicklung von Rückkopplungseffekten auf langen Zeitskalen.
         \item[CMIP5] Coupled Model Intercomparison Projects. Zusammenfassung einer Reihe an Klimamodellen.
-        \item[GMST] Global mean surface temperature. Mittlere globale Oberflächentemperatur.
+        \item[GMST] Global mean surface temperature.
         \item[TCRE] Transient climate response to cumulative carbon emissions. Global Änderung der Oberflächentemperatur pro emittierter Einheit Kohlendioxid.
       \end{itemize}
-
-
     }
-\end{frame}
-
-\begin{frame}
-	\frametitle{CO$_2$ Restbudget für Erwärmung um 1,5°C}
-    \begin{itemize}
-        \item Emission von maximal 420 GtCO$_2$ zur Einhaltung von 1,5°C mit 66\%iger Warscheinlichkeit
-        \item Emission von maximal 580 GtCO$_2$ zur Einhaltung von 1,5°C mit 50\%iger Warscheinlichkeit
-        \item Mögliche Reduktion um 100 GtCO$_2$ bei Berücksichtigung von Erdsystem-Rückkopplungen wie Auftauen von Permafrostböden
-        \item Globale Emissionen in 2019 49 GtCO$_2$eq % https://edgar.jrc.ec.europa.eu/overview.php?v=booklet2019
-        \item Bei gleichgbleibender Rate sind die Restbudgets in 8,5 bzw. 11,8 Jahren aufgebraucht
-    \end{itemize}
-
-	\note{
+	\note<5>{
 		\begin{itemize}
+      \item Mögliche Reduktion um 100 GtCO$_2$ bei Berücksichtigung von Erdsystem-Rückkopplungen wie Auftauen von Permafrostböden
 			\item Restbudgets einerseits aus Erwärmung im Vergleich zu 1861-1880 auf Basis des RCP8.5 Szenarios
       \item Andererseits \enquote{from a set of available pathways that were assessed to have a >50\% probability to exceed 1.5°C by mid-century, and return to 1.5°C or below in 2100 with greater than 66\% probability}
       \item Weitere Studien, die teilweise nur CO$_2$ berücksichtigen
       \item Seit dem AR5 Report 2014 viele weitere Veröffentlichungen, die berücksichtigt werden
       \item Viele Unsicherheiten auf die berechneten Restbudgets wie Unterschiede in Szenarien zur Entwicklung von nicht-CO$_2$ Emissionen oder die Unsicherheit auf die historische Temperatur von 1850-1900
+      \item[$\Rightarrow$] Viele Unsicherheiten, aber dennoch: Die Zeit ist knapp!
 		\end{itemize}
+    Fragen?
 	}
 \end{frame}
 
 \begin{frame}
   \frametitle{CO$_2$-Emissionen Deutschlands}
   \begin{columns}
-    \column{0.6\linewidth}
+    \column{0.7\linewidth}
       \begin{figure}
 		    \centering
 		    \includegraphics[width=\linewidth]{bilder/co2-emissions-de.png}
 		    \caption{CO$_2$-Emissionen.}
       \end{figure}
-    \column{0.4\linewidth}
+    \column{0.3\linewidth}
       \begin{itemize}
         \item Linearer Trend: Null-Emissionen in 80 Jahren.
-        \item Bisherige Klimaschutzmaßnahmen reichen nicht zur Erreichung der gesetzten Ziele.
+        \item Bisherige Maßnahmen reichen nicht zur Erreichung der gesetzten Ziele.
         \item Klimaplan 2050 (Pariser Abkommen) zeigt ambitionierten Weg.
         \item[$\rightarrow$] Unklar, wie dieser Weg gegangen werden soll.
       \end{itemize}
     \end{columns}
     \note{
       \begin{itemize}
-        \item Jährliche CO$_2$-Emissionen Deutschlands (schwarz)
-        \item Linare Extrapolation des Trends aus den Jahren 2000-2019 (rot)
-        \item Erwartete jährliche Emissionen aus dem Projektionsbericht 2019 der Bundesregierung auf Basis der zu dem Zeitpunkt beschlossenen oder vorbereiteten Maßnahmen (orange)
-        \item Ziele des Klimaplans 2050 der Bundesregierung (blau)
+        \item[] Jährliche CO$_2$-Emissionen Deutschlands (schwarz)
+        \item[] Linare Extrapolation des Trends aus den Jahren 2000-2019 (rot)
+        \item[] Erwartete jährliche Emissionen aus dem Projektionsbericht 2019 der Bundesregierung auf Basis der zu dem Zeitpunkt beschlossenen oder vorbereiteten Maßnahmen (orange)
+        \item[] Ziele des Klimaplans 2050 der Bundesregierung (blau)
       \end{itemize}
     }
 \end{frame}
@@ -95,15 +128,15 @@
 \begin{frame}
   \frametitle{Wie viele Emissionen stehen Deutschland noch zu?}
   \begin{columns}
-    \column{0.6\linewidth}
+    \column{0.7\linewidth}
       \begin{figure}
 		    \centering
 		    \includegraphics[width=\linewidth]{bilder/restbudget_de_new.png}
 		    \caption{Globale Oberflächentemperatur gegen kumulative CO$_2$-Emissionen.}
       \end{figure}
-    \column{0.4\linewidth}
+    \column{0.3\linewidth}
       \begin{itemize}
-        \item Anteil Emissionen 2016: 2,2\,\%
+        \item Emissionen 2016: 2,2\,\%
         \item Faire Verteilung: 1,1\,\%
         \item[$\rightarrow$]Trotz ungerechter Verteilung Überschreitung der Grenzen für 1,5°C
       \end{itemize}
@@ -123,5 +156,6 @@
         \end{itemize}
         \item[] Nationale Zielvorgaben für eine Senkung von Treibhausgasemissionen im Rahmen des Pariser Klimaabkommens berücksichtigen diese Verteilungsfrage kaum und gehen vom Status Quo der Verteilung aus.
       \end{itemize}
+      Fragen? $\rightarrow$ Sonst Gleichgewichtszustände und Kipppunkte
     }
 \end{frame}
