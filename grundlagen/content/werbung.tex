@@ -1,11 +1,20 @@
-\section{Werbeblock}
+\subsection{Werbeblock}
 \begin{frame}
-\includegraphics[width=1\linewidth]{bilder/c4f.pdf}
+  \begin{tikzpicture}
+    \onslide<1-2|handout:1>\node[anchor=south west,inner sep=0] (image) {\includegraphics[width=1\linewidth]{bilder/campus-for-future-vorstellung-ringvorlesung.pdf}};
+    \onslide<2|handout:1>\node[draw=yellow, fill=yellow, rotate around={-15:(0,0)}, drop shadow={color=black}, inner sep=5pt] at ($(image.center) + (4, -2.4)$) {\textbf{Klimawoche vom 23. bis 27.11.2020}};
+    %\begin{scope}[x={(image.south east)},y={(image.north west)}]
+      %\onslide<2|handout:1>\draw[fill=yellow, yellow, rotate around={-20:(0.625,0.25)] (0.5,0.2) rectangle (0.75,0.3) node[pos=.5] {23. bis 27.11.2020};
+    %\end{scope}
+  \end{tikzpicture}
 \note{
-  Klimawoche erwähnen
+  \begin{itemize}
+    \item[] Link zum Discord auf Anfrage, z.B. per Mail
+    \item[] C4F-Klimawoche im Rahmen  der Public Climate School 3.0 geben.
+    \item[] vom 23. bis 27.11.
+  \end{itemize}
 }
 \end{frame}
-
 
 \begin{frame}
 \frametitle{Scientists 4 Future Dortmund}
@@ -14,7 +23,7 @@
 	 \begin{itemize}
 		\item Ziel ist die Vermittlung von Fakten zum Thema Klimawandel
 		\item Richtet sich an Wissenschaftler*innen in Dortmund und Umgebung
-	 	\item \url{https://scientists4future-dortmund.de/}
+	 	\item \url{https://s4f-dortmund.github.io/}
 	 \end{itemize}
  \end{column}%
  \hfill%
@@ -24,18 +33,16 @@
 		 \includegraphics[width=0.625\textwidth]{bilder/s4f_logo_dortmund.png}
  \end{column}%
 \end{columns}
-\begin{columns}[c] % align columns
+\begin{columns} % align columns
  \begin{column}{.48\textwidth}
-	 \centering
 	 \begin{figure}
 		 \centering
-		 \includegraphics[width=0.95\textwidth]{bilder/demo.jpg}
+		 \includegraphics[trim={0cm 0cm 0cm 2.5cm}, clip, width=0.95\textwidth]{bilder/demo.jpg}
 		 \caption{S4F Dortmund beim globalem Klimastreik am 20.09.2019.}
 	 \end{figure}
  \end{column}%
  \hfill%
  \begin{column}{.48\textwidth}
-	 \centering
 	 \begin{figure}
 		 \centering
 		 \includegraphics[width=\textwidth]{bilder/sommerkongress.jpg}
@@ -44,4 +51,49 @@
  \end{column}%
 \end{columns}
 
+\note{
+Dank an Mitarbeit von Robert, Sebastian und Luise, ohne die diese Vorlesung nicht möglich gewesen wäre.
+}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Weitere Möglichkeiten sich zu engagieren}
+  \begin{columns}
+    \column{0.6\textwidth}
+    \begin{figure}
+      \centering
+      \includegraphics[width=\textwidth]{bilder/climate-kic-logo.pdf}
+    \end{figure}
+    Am 13. \& 14.11.2020, weitere Infos hier: \href{https://cet.tu-dortmund.de/veranstaltungen/detail/climathon-germany-4770/}{\color{blue}\underline{Link}}\\
+    Anmeldung unter:\\
+    \url{https://impacthub.de/events/climathon-2020.html}
+    \column{0.4\textwidth}
+    \begin{figure}
+      \centering
+      \includegraphics[width=\textwidth]{bilder/akn-tu.jpg}
+    \end{figure}
+    Arbeitskreis Nachhaltigkeit der TU\\
+    weitere Infos hier: \href{https://www.tu-dortmund.de/universitaet/nachhaltigkeit/}{\color{blue}\underline{Link}}
+  \end{columns}
+
+
+  \note{
+  \begin{itemize}
+    \item[] Der Climathon ist ein globaler 24-Stunden (Ideen-Marathon) für städtische Klimainnovationen.
+    \begin{itemize}
+      \item[] gleichzeitig in mehr als 100 Städten auf der ganzen Welt
+      \item[] 1000 Kreative, Ex­per­tin­nen und Experten und Macherinnen und Macher entwickeln online gemeinsam in­no­va­ti­ve Klimaschutz-Lö­sun­gen.
+      \item[] ​Ziel ist es, konkrete lokale He­raus­for­de­rung­en für mehr Klimaschutz und Klimagerechtigkeit in den Blick zu nehmen und dafür in interdisziplinär zusammengesetzten Teams Lösungsansätze entstehen zu lassen.
+      \item[] Einige Challenges sind schon einsehbar
+    \end{itemize}
+    \item[] Arbeitskreis Nachhaltigkeit der TU Dortmund
+    \begin{itemize}
+      \item[] Vertreter aus Verwaltung, der Studierendenschaft und den wissenschaftlichen Mitarbeitern
+      \item[] Aufgeteilt in Arbeitskreise, Mitarbeit möglich, aber Geduld nötig
+    \end{itemize}
+    \item[] AStA Referat Soziales, Diversität und Nachhaltigkeit
+    \item[] Think Tank zur Nachhaltigkeit in der BCI
+  \end{itemize}
+  }
 \end{frame}

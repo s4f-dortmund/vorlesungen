@@ -17,5 +17,9 @@ clean:
 
 FORCE:
 
+splithandout:
+	pdftk "build/${NAME}.pdf" cat "1-22" output "Grundlagen_des_Klimawandels_-_Teil-I_-_Das_Erdsystem.pdf"
+	pdftk "build/${NAME}.pdf" cat "23-51" output "Grundlagen_des_Klimawandels_-_Teil-II_-_Faktoren_des_Klimasystems.pdf"
+	pdftk "build/${NAME}.pdf" cat "52-77" output "Grundlagen_des_Klimawandels_-_Teil-III_-_Stoffkreislaeufe_Restbudget_und_Kipppunkte.pdf"
 
 .PHONY: all clean FORCE

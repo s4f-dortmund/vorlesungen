@@ -1,4 +1,5 @@
-\section{Wetter und Klima}
+\subsection{Definition von Wetter und Klima}
+
 \begin{frame}
 	% TODO: Wetter vs. Klimadaten Dortmund: zB Osterwetter vs klassisches Niederschlags-Temperatur-Diagramm anfertigen
 
@@ -34,13 +35,23 @@
 	\vfill
 	\tiny{Zitate von \url{https://www.umweltbundesamt.de/service/uba-fragen/was-ist-eigentlich-klima}}
 
-	\note{
+	\note<1->{
 	Klima
 	\begin{itemize}
 		\item Auch definiert als Zustand des klimatischen Systems, Weltorganisation für Meterologie (WMO)
 		\item Betrachtung verschiedener Parameter wie Temperatur, Niederschlag, Windgeschwindigkeiten (WMO)
 		\item Betrachtet werden u.a. Mittelwert, Abweichung und Wahrscheinlichkeit des Auftretens extremer Ereignisse z.B. Dürren %M.Latif, Klimawandel und Klimadynamik S. 11
 		\item Aus dem Griechischen: \textit{klinein} $\equiv$ neigen $\rightarrow$ Neigung der Erdachse
+	\end{itemize}
+	}
+	\note<2->{
+	\vspace{1em}
+	Beispiel
+	\begin{itemize}
+		\item[] Gut bekannt sind die Jahreszeiten
+		\item[] Eine Jahreszeit ist das mittlere Wetter zu der Jahreszeit
+		\item[] Ganz einfach gesprochen: wärmer im Sommer und kälter im Winter
+		\item[Frage] Woher kommen die Jahreszeiten?
 	\end{itemize}
 	}
 
@@ -61,10 +72,15 @@
 
 	\note{
 	\begin{itemize}
-		\item[] Erde rotiert um die Sonne und um die eigene Achse
-		\item[]	Neigung der Erdachse momentan etwa \SI{23,5}{°}
-		\item[$\rightarrow$] Jahreszeiten
+		\item[] Erde rotiert um die Sonne in einem variablen Abstand von 147 mio. bis 152 mio. Kilometern
+		\item[] Ebenso dreht sich die Erde und um die eigene Achse
+		\item[]	Neigung der Erdachse zur Ebene der Erdbahn um die Sonne momentan etwa \SI{23,5}{°}
+		\item[$\rightarrow$] Jahreszeiten, denn der Winkel der Sonneneinstrahlung ist entscheidend für den lokalen Energieeintrag
+		\item[] Ist nur für kurze Zeiträume richtig
+		\item[$\rightarrow$] Milankovic-Zyklen in den 1930er Jahren entdeckt
 	\end{itemize}
+	\vspace{1em}
+	Gibt es Fragen bis hier her?
 	}
 \end{frame}
 
@@ -72,7 +88,15 @@
 \frametitle{Klima - Eiszeitzyklen}
 \begin{figure}
 	\centering
-	\includegraphics[width=.55\linewidth]{bilder/milankovitch_IPCC2007_AR4.png}
+	\begin{tikzpicture}
+		\node[anchor=south west,inner sep=0] (image) at (0,0) {
+		\includegraphics[width=.55\linewidth]{bilder/milankovitch_IPCC2007_AR4.png}};
+		\begin{scope}[x={(image.south east)},y={(image.north west)}]
+			\onslide<2|handout:0>\draw[red,ultra thick] (0.495,0.25) circle (1.75em);
+			\onslide<3|handout:0>\draw[red,ultra thick] (0.79,0.92) circle (1.75em);
+			\onslide<4|handout:0>\draw[red,ultra thick] (0.9,0.85) circle (1.75em);
+		\end{scope}
+	\end{tikzpicture}
 	\caption{Milankovitch-Zyklen: Periodische Änderungen der Erdbahnparameter, Quelle: IPCC 2007, WG1, Kapitel 6}
 \end{figure}
 \begin{itemize}
@@ -83,17 +107,28 @@
 	\item[$\rightarrow$] langfristiger Einfluss auf das Klima
 \end{itemize}
 
-\note{
+\note<1->{
+Milankovic in den 1930er Jahren, Eiszeitzyklen
 \begin{itemize}
-	\item[] Milankovic in den 1930er Jahren, Eiszeitzyklen
-	\item[] Exzentrizität: Erdbahn variiert
+	\item[E] Veränderung der Ausdehnungsrichtung der Erdbahn (Exzentrizität)% - aktuell: 0,017 perfekter Kreis bei 0, leicht elliptisch bei 0,05
+	\item[T] Veränderung des Neigungswinkels der Erdachse (eng. tilt)
+	\item[P] Schwankung der Erde um die Erdachse (Präzession) % da die Erde keine perfekte Kugel ist
+	\item[$\rightarrow$] verursachen Eiszeitzyklen, sowie deren Warm- und Kaltphasen
+	\item[$\rightarrow$] langfristiger Einfluss auf das Klima
+\end{itemize}
+\vspace{2em}
+}
+\note<2>{
+	Exzentrizität: Erdbahn variiert
 	\begin{itemize}
 		\item[] Periode: etwa 1 mio. Jahre, variiert zwischen \num{0,002} und \num{0,05}
 		\item[] Momentan: \num{0,017}, perfekter Kreis bei 0, leicht elliptisch bei \num{0,05}.
 		\item[] Ursache: Störung durch die anderen Planeten des Sonnensystems, im wesentlichen Jupiter und Saturn.
 		\item[] Folge: Solare Einstrahlung wird um weniger als \SI{1}{W\per \square m} geändert.
 	\end{itemize}
-	\item[] Neigung der Erdachse
+	}
+\note<3>{
+	Neigung der Erdachse (Tilt)
 	\begin{itemize}
 		\item[] Periode: \num{41000} Jahre, Auslenkung zwischen \SIrange{22}{24,5}{°}
 		\item[] Momentan: \SI{23,5}{°}
@@ -101,14 +136,19 @@
 		\item[] Folge: Verstärkt oder schwächt jahreszeitliche Unterschiede.
 		\item[] Keine Veränderung der gemittelten, jährlichen Sonneneinstrahlung.
 	\end{itemize}
-	\item[] Präzession der Erde, taumeln um die eigene Achse
+	}
+\note<4>{
+	Präzession der Erde, taumeln um die eigene Achse
 	\begin{itemize}
 		\item[] Periode: etwa \num{20000} Jahre
 		\item[] Ursache: Die Erde ist keine perfekte Kugel.
 		\item[] Folge: Jahreszeiten treten nicht immer im gleichen Bahnpunkt der Erdbahnellipse auf.
 	\end{itemize}
-\end{itemize}
-}
+	\vspace{1em}
+	Sehr guter Wikipedia-Artikel für mehr Details
+	\vspace{1em}
+	Gibt es Fragen?
+  }
 \end{frame}
 
 
@@ -122,18 +162,43 @@
 	\uncover<2->{
 	\begin{figure}
 		\centering
-		\includegraphics[width=0.6\linewidth]{bilder/Temp_Deutschland_1743-2013_Berkley_Wiki.png}
+		\begin{tikzpicture}
+			\node (image1) {\includegraphics[width=0.6\linewidth]{%
+				bilder/Temp_Deutschland_1743-2013_Berkley_Wiki.png}};
+			\onslide<3>\node (image2) at (image1.west) [xshift=-0.9cm]{%
+				\includegraphics[trim={0cm 1.5cm 0cm 3cm}, clip, width=0.25\linewidth]{%
+					bilder/Global_Historical_Climate_Network_Daily/station-counts-1861-1890-temp.png}};
+			\onslide<3>\node (image3) at (image1.east) [xshift=1.4cm]{%
+				\includegraphics[trim={0cm 1.5cm 0cm 3cm}, clip, width=0.25\linewidth]{%
+					bilder/Global_Historical_Climate_Network_Daily/station-counts-1981-2010-temp.png}};
+	  \end{tikzpicture}
 		\caption{Entwicklung der mittleren Jahrestemperaturen in Deutschland, Quelle: Wikipedia, Daten: Berkeley Earth Surface Temperature Project}
 	\end{figure}
 	}
 
 	%TODO Bild mit 30 Jahre moving average erstellen
-	\note{
+	\note<1>{
+	Definition: Eine Klimaänderung ist eine erkennbare (messbare) Änderung Klimas über einen gewissen Zeitraum (z.B. 30 Jahre), pürbar durch Änderung atmosphärischer Größen wie der Temperatur
+	}
+	\note<2->{
 	\begin{itemize}
-		\item[] mittlere Temperaturen in Deutschland pro Jahr von 1743 bis 2013
-		\item[] 10 Jahre moving average, Fluktuation, aber Temperaturanstieg
-		\item[] 30 Jahre moving average, weniger Schwankungen, kleiner, aber deutlicher Temperaturanstieg
-	\end{itemize}
+	 	\item[] mittlere Temperaturen in Deutschland pro Jahr von 1743 bis 2013
+	 	\item[] 10 Jahre moving average, Fluktuation, aber Temperaturanstieg
+	 	\item[] 30 Jahre moving average, weniger Schwankungen, kleiner, aber  deutlicher Temperaturanstieg
+		\item[] in hellrot: Unsicherheit auf den gleitenden Durchschnitt nimmt ab (Erinnerung an Dichte der Wetterstationen)
+	 \end{itemize}
+	 }
+	 \note<3>{
+	 \vspace{2em}
+	 \begin{itemize}
+	   \item[] Zentrale Frage: Was bestimmt das Klima?
+	   \item[] Wie ist ein Erdklima möglich?
+	   \item[] Grundlage bildet die Sonne. Aber was ist der Unterschied zu unseren Nachbarn?
+	   \item[] Mittlere Oberflächentemperaturen: Venus \SI{464}{°C}, Mars \SI{-55}{°C}
+	   \item[$\rightarrow$] Die Erde hat eine Atmosphäre
+	   \item[] Die Atmosphäre sorgt dafür, dass eine gewisse Menge der Sonnenenergie auf der Erde verbleibt
+	   \item[] lebenfreundliche Temperaturen werden auf der Erde erreicht
+	 \end{itemize}
 	}
 
 \end{frame}

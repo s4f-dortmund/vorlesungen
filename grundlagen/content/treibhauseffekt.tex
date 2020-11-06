@@ -2,6 +2,47 @@
 % zB Sonneneinstrahlung- Atmosphärische Reflexion = 235 W/m2
 % Die Abbildung zeigt zum einen die Temperatur auf der Erde ohne die Strahlungsbilanz der Erde(links) außerdem nochmal den atmosphärischen Aufbau (rechts)
 % In der Mitte ist die Auswirkung der Treibhausgase zu sehen
+\subsection{Der Treibhauseffekt}
+\begin{frame}
+	\frametitle{Exkurs: Licht}
+	\begin{columns}
+		\column[t]{0.5\linewidth}
+		\begin{itemize}
+			\item Licht wird hier als Welle mit Wellenlänge $\lambda$ betrachtet
+			\item Normales Licht besteht aus Überlagerung von vielen Wellen unterschiedlicher Wellenlängen
+			\item Unterschiedliche Wellenlängen nehmen wir als Farben wahr
+			\item Auch \glq Licht\grq\ außerhalb des sichtbaren Bereichs
+			\begin{itemize}
+				\item Niedrigere Wellenlänge: UV-A/B/C, Röntgen-/Gamma-Strahlung
+				\item Größere Wellenlänge: Infrarot-Strahlung, Mikrowellen, Funk/Radio
+			\end{itemize}
+			\item Die Sonne emittiert hauptsächlich sichtbares Licht, weniger Infrarot und UV
+		\end{itemize}
+	\column[t]{0.5\linewidth}
+	% TODO: \usepackage{graphicx} required
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.5\linewidth]{bilder/welle}
+		\includegraphics[width=0.5\linewidth]{bilder/EM-Wave_noGIF}\\
+		\includegraphics[width=\linewidth]{bilder/Spectral-lines-continuous}
+		\caption{Quellen: [Wiki5,6]}
+	\end{figure}
+
+	\end{columns}
+
+  \note{
+	\begin{itemize}
+		\item[] Treibhauseffekt durch solare Strahlung angetrieben $\rightarrow$ Grundverständnis für Strahlung hier wichtig
+		\item[] Teilchencharakter des Lichts im Wesentlichen bei hohen Energie oder geringen Lichtmengen wichtig
+		\item[] Allgemein: Elektromagnetische Welle, hier aber nicht wichtig
+		\item[] Wellenlänge umgekehrt proportional zu Frequenz und Energie
+		\item[] Verschiedene Wellenlängen führen zu unterschiedlichen Eigenschaften und Wechselwirkungen
+		\item[] Analogie zu Schallwellen, Überlagerung $\approx$ Akkord
+		\item[] Die Natur des Lichts war lange unbekannt und umstritten, wurde erst durch die moderne Physik geklärt
+	\end{itemize}
+}
+\end{frame}
+
 
 \begin{frame}
   \frametitle{Treibhauseffekt}
@@ -41,22 +82,39 @@
   \end{figure}
     }
 
-  \note{
+  \note<1->{
   \begin{itemize}
+		\item[] Absorptionsbanden der Atmosphäre, sowie Effekt auf Sonneneinstrahlung und thermische Abstrahlung.
     \item[] Thermische Ausstrahlung der Erde etwa \SI{240}{W\per m\squared}
-    \item[$\rightarrow$] entspricht einer Strahlungstemperatur von etwa \SI{-20}{°C} (Plancksches Strahlungsgesetz, Wärmestrahlung eines schwarzen Körpers)
+    \item[$\rightarrow$] entspricht einer Strahlungstemperatur von etwa \SI{-20}{°C} (Plancksches Strahlungsgesetz, Wärmestrahlung eines schwarzen Körpers, blaue Linie \SI{260}{K})
     \item[] tatsächlich beobachtete Temperatur aber \SI{35}{°C} höher, Wie ist das möglich?
 		\item  {\color{red}{Wasserdampf H$_2$O}} -  großer Teil des natürlicher Treibhauseffekt (\SI{60}{\%})
+  \end{itemize}
+  }
+  \note<2->{
+  \begin{itemize}
 		\item  {\color{red}{Kohlenstoffdioxid CO$_2$}} - entsteht u.A. bei der Nutzung fossiler Brennstoffe (Öl, Kohle, Gas)
     \item[$\rightarrow$] Anstieg auf den Menschen zurückzuführen
+  \end{itemize}
+  }
+  \note<3->{
+  \begin{itemize}
     \item  {\color{red}{Ozon O$_3$}} - entsteht bei Reaktion von Auto-Abgasen in der Luft im Sonnenlicht
+  \end{itemize}
+  }
+  \note<4->{
+  \begin{itemize}
 		\item  {\color{red}{Methan CH$_4$}} - entsteht u.a. bei der Zersetzung von organischem Material
 		\item[$\rightarrow$] $>$ 60\,\% der globalen Methan-Emissionen sind auf menschliche Aktivitäten zurückzuführen %ClimateChange Kurs der Uni Helsinki Chapter 1.3.3
+  \end{itemize}
+  }
+  \note<5->{
+  \begin{itemize}
 		\item  {\color{red}{Distickstoffmonoxid N$_2$O (Lachgas)}} - entsteht beim Abbau von Düngemitteln in der Erde
 		\item {\color{red}{fluorierte Treibhausgase (F-Gase)}}
 		\item[$\rightarrow$] kommen nicht natürlich vor, sehr treibhauswirksam, verweilen z.T. sehr lange in der Atmosphäre, bis zu 10.000 Jahre, aber kommen nur in sehr geringer Konzentration vor
     \item[] F-Gase: voll halogenierte Fluorkohlenwasserstoffe (FKW, englisch: PFC), teilhalogenierte Fluorkohlenwasserstoffe (HFKW, englisch: HFC), Schwefelhexafluorid (SF6) und Stickstofftrifluorid (NF3).
-		\item[] F-Gase kommen in der Natur nicht vor; aber befinden sich u.a. in Gefriertruhen, Klimaanlagen, Feuerlöschern und Dämmstoffen.
+		\item[] F-Gase kommen in der Natur nicht vor; aber befinden sich u.a. in Gefriertruhen, Klimaanlagen, Feuerlöschern und Dämmstoffen. \hspace{3em} $\rightarrow$ Gibt es Fragen?
 	\end{itemize}
   }
 \end{frame}
@@ -90,9 +148,9 @@
 		\begin{figure}
 			\begin{columns}
 				\column{0.6\linewidth}
-				\includegraphics[width=0.9\linewidth]{bilder/radiative_forcing_CCnow_mooc.jpg}
-				\column{0.3\linewidth}
-				\caption{Strahlungsantrieb der Treibhausgase zwischen 1750 und 2011, Quelle: Climate.now MOOC, abgewandelt von IPCC 2014 Kapitel 8}
+				\includegraphics[width=0.9\linewidth]{bilder/radiative_forcings_of_ghg.pdf}
+				\column{0.25\linewidth}
+				\caption{Strahlungsantrieb der Treibhausgase zwischen 1750 und 2011, Quelle: modifiziert nach IPCC 2013 Kapitel 8}
 			\end{columns}
 		\end{figure}
 \begin{itemize}
@@ -102,17 +160,19 @@
 \end{itemize}
 \note{
   \begin{itemize}
-    \item[] Neben den Treibhausgasen beeinflussen weitere Faktoren den globalen Strahlungsantrieb (Energiebilanz der Erde)
+    \item[] Neben den Treibhausgasen beeinflussen weitere Faktoren den globalen Strahlungsantrieb
+    \item[] Strahlungsantrieb: Änderung der Energiebilanz der Erde
     \item[] Diese sind im allgemeinen gekoppelt, z.B. beim Abschmelzen von Eismassen auf Grund von höherer Temperatur
    	\item[] Manche Faktoren wirken dämpfend auf den Strahlungsantrieb, etwa eine erhöhte Aerosolkonzentration
    	\item[] Der Einfluss der Veränderung der Sonnenaktivität (gerne genannten Argument gegen menschgemachten Klimawandel) ist hingehen vergleichsweise klein
    	\item[] Insgesamt gibt es aber (trotz einiger bestehender Unsicherheiten) eine eindeutige Erhöhung des Stralungsantriebs durch menschliche Aktivitäten
-    \item[] Contrails = Condensation Trails
     \item[] O$_3$ ist kontinental bis global verbereitet und das Verständnis ist Mittel
-  	\item[] CH$_4$ ist global verbreitet jedoch ist das Verständnis über den Strahlungsantrieb gering.
-  	\item[] Das Verständnis sinkt nach Einträgen und daher besonders für die verringernden RF-Faktoren wie Albedo ungewiss. Die Verringerung könnte auch deutlich niedriger liegen, was bedeutet, dass der von den Menschen verursachte Strahlungsantireb sogar noch stärker ist. - Da durch die Erderwärmung und Rußablagerungen auf dem Eis der Albedo-Effekt geschmälert wird, ist das sogar wahrscheinlich.
+  	\item[] CH$_4$ ist global verbreitet jedoch ist das Verständnis über den Strahlungsantrieb geringer.
+  	\item[] CH$_4$ zerfällt über Wechselwirkung mit OH über verschiedene Zwischenprodukte in O$_3$, H$_2$O
   	% Ergänzungen aus der Abbildung: https://wiki.bildungsserver.de/klimawandel/index.php/Strahlungsantrieb
   \end{itemize}
+	\vspace{1em}
+	Gibt es Fragen?
   }
 \end{frame}
 
@@ -121,7 +181,7 @@
 	\frametitle{CO$_2$-Äquivalent}
 
 	\begin{block}{Strahlungsantrieb / Radiative Forcing / RF}
-		Strahlungsenergie pro Quadratmeter, die durch die Tropopause hindurch kommt \\
+		Strahlungsenergie pro Quadratmeter, die durch die Atmosphäre hindurch kommt \\
 		Einheit: \SI{}{\watt\per\square\meter}
 	\end{block}
 
@@ -149,7 +209,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Klimawirksamkeit der Treibhausgase}
+	\frametitle{Klimawirksamkeit der Treibhausgase im Verlauf der Zeit}
 %(Quelle: IPCC 2014, Kapitel 8, Tabelle 8.7) %Treibhauswirksamkeit über 100 Jahre ohne Einbezug der Feedbacks - GWP [..] with and without inclusion of climate–carbon feedbacks (cc fb) in response to emissions of the indicated non-CO2 gases
 
 %TODO Abbildung evtl vereinfachen oder bessere Abbildung finden! Einfluss von SO_2 noch nicht betrachtet und generell zu viele Infos über andere Gase enthalten
@@ -158,13 +218,12 @@
 % IPCC 2013 Physical Science Bases
 		\begin{figure}
 			\centering
-			  \includegraphics[width=.9\linewidth]{bilder/IPCC_GWP_anthropogenic_emissions.jpg}
-			  \caption{Globale von Menschen verursachte Emissionen sortiert nach Klimawirksamkeit (GWP), Quelle: IPCC 2013, Kapitel 8}
+			  \includegraphics[width=.7\linewidth]{bilder/ghg-forcings-over-time.pdf}
+			  \caption{Klimawirksamkeit der Treibhausgase CO$_2$, CH$_4$ und N$_2$O über einen Zeitraum von 200 Jahren, Quelle: IPCC 2014, Kapitel 8}
 		\end{figure}
 
     \note{
     \begin{itemize}
-      \item[] auch Methan bleibt vergleichsweise lange klimawirksam
       \item[] Die wichtigsten anthropogehnen Treibhausgase sind CO$_2$, Methan und Lachgas
       \item[] Sie kommen in sehr unterschiedlichen Konzentration in der Atmospähre vor
       \begin{itemize}
@@ -174,15 +233,12 @@
       \item[] Insgesamt ergibt sich eine vergleichbare Wirkung auf den Treibhauseffekt, ein zusätzliche Strahlungsantrieb (Maß für die Änderung der Energiebilanz der Erde) von etwa \SI{0,2}{\watt\per\square\metre} bis \SI{2}{\watt\per\square\metre}
     	\item[] Darüber hinaus verweilen unterschiedliche Stoffe unterschiedlich lang in der Atmosphäre und sind daher auf unterschiedlichen Zeitskalen wirksam
     	\item[] Auf langen Zeitskalen ist CO$_2$ von hoher Bedeutung
-      \item[] GWP = Global Warming Potential
-      \item[] GTP = Global Temperature Change Potential
+      \item[] auch Methan bleibt vergleichsweise lange klimawirksam
       \item[$\rightarrow$] CO$_2$, CH$_4$ und N$_2$O haben über die Zeit die höchste Klimawirksamkeit
-      \item[$\rightarrow$] CO$_2$ verliert über den Zeitraum von 100 Jahren kaum an Klimawirksamkeit
-      \item[$\rightarrow$] CO$_2$, CH$_4$ und N$_2$O haben über die Zeit die höchste Klimawirksamkeit
-		  \item[$\rightarrow$] CO$_2$ verliert über den Zeitraum von 100 Jahren kaum an Klimawirksamkeit
-      \item[] Schwefeldioxid ist ein farbloses, schleimhautreizendes, stechend riechendes und sauer schmeckendes, giftiges Gas
-    %		auch Methan bleibt vergleichsweise lange klimawirksam\\
+      \item[$\rightarrow$] CO$_2$ verliert über den Zeitraum von 200 Jahren kaum an Klimawirksamkeit
       \end{itemize}
+			\vspace{1em}
+			Gibt es Fragen?
       }
 
 \end{frame}
