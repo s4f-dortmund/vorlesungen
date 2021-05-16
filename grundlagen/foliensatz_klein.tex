@@ -1,0 +1,89 @@
+\input{tex/header.tex}
+
+\author{Scientists for Future - Dortmund}
+\title{Physikalische Grundlagen des Klimawandels}
+
+\setbeamertemplate{note page}{\vspace{2em}\insertnote}
+
+%\setbeameroption{hide notes} % Only slides
+%\setbeameroption{show only notes} % Only notes
+\setbeameroption{show notes on second screen=right} % Both
+
+%\subtitle{}
+%\logo{}
+\institute{\vfill\hfill\huge\ccbync}
+\date{17. Mai 2020}
+%\subject{}
+%\setbeamercovered{transparent}
+%\setbeamertemplate{navigation symbols}{}
+
+% configure table of contents
+\AtBeginSection[]
+{
+\begin{frame}<beamer|handout:1>
+\frametitle{Heutige Themen}
+\tableofcontents[currentsection,sectionstyle=show/hide,subsectionstyle=show/show/hide]
+\end{frame}
+}
+
+\begin{document}
+
+	\begin{frame}[plain]
+		\maketitle
+
+		\note{
+			\begin{itemize}
+				\item[] Chairman danken
+				\item[] S4F Dortmund gegründet im April 2019 im Rahmen der FFF
+							  Bewegung
+			\end{itemize}
+			\begin{itemize}
+				\item[] Vorlesung orientiert sich an dem Buch "Klimawandel und
+								Klimadynamik" von Mojib Latif
+				\item[] Wenn etwas unklar ist: Stellen Sie sehr gerne Fragen!
+				\item[] Zwischendurch werde ich kleine Fragen stellen und Zeiträume
+							  schaffen in denen das möglich ist
+			\end{itemize}
+			}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Physikalische Grundlagen des Klimawandels}
+		\tableofcontents[subsectionstyle=hide/hide]
+
+		\note{
+			Teil I
+			\begin{itemize}
+				\item Kurze Motivation zur Vorlesungsreihe
+				\item Definition von Wetter und Klima
+				\item Strahlungsprozesse der Erde, wie ist unser Energiehaushalt?
+				\item Was ist der Treibhauseffekt?
+			\end{itemize}
+			Teil II
+			\begin{itemize}
+				\item Wie interagieren die einzelnen Faktoren miteinander?
+				\item Was ist das Restbudget?
+				\item ein kleiner Werbeblock
+			\end{itemize}
+		}
+	\end{frame}
+
+	\section{Teil I - Das Erdsystem und CO$_2$}
+	\input{content/einleitung.tex}
+	\input{content/wetter_und_klima.tex}
+	\input{content/strahlungsprozesse.tex}
+	\input{content/treibhauseffekt.tex}
+	\subsection{Zusammenfassung}
+	\input{content/zusammenfassung_erdsystem.tex}
+	\section{Teil II - Die Faktoren des Klimasystems}
+	\subsection{Klimamodelle}
+	\input{content/klimamodelle.tex}
+	\subsection{Restbudget}
+	\input{content/restbudget.tex}
+	\subsection{Zusammenfassung}
+	\input{content/zusammenfassung_restbudget_klimamodelle.tex}
+	\input{content/werbung.tex}
+	\subsection{Quellen}
+	\input{content/referenzen.tex}
+
+\end{document}

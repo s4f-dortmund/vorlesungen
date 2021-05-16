@@ -3,11 +3,15 @@ TEXOPTIONS = --lualatex --output-directory=build --interaction=nonstopmode --hal
 
 all: $(NAME).pdf
 
+klein: $(NAME)_klein.pdf
+
 # latexmk does its own dependency management, so we always run it
 # by stating an impossible prerequesite FORCE
 $(NAME).pdf: FORCE | build
 	TEXINPUTS=../style: latexmk $(TEXOPTIONS) $(NAME).tex
 
+$(NAME)_klein.pdf: FORCE | build
+	TEXINPUTS=../style: latexmk $(TEXOPTIONS) $(NAME)_klein.tex
 
 build:
 	mkdir -p build
